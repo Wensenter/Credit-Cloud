@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>template</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/template.css"
+    />
+    <!-- <script src="../js/flexible.js"></script> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <img src="../images/111.png" alt="" />
+      <p>gulp 模板</p>
+      <!-- 滚动例子html结构如下
+        下面的代码中 better-scroll 是作用在外层 scrollBox 容器上的，滚动的部分是 box 元素。
+        这里要注意的是，better-scroll 只处理容器（scrollBox）的第一个子元素（box）的滚动，
+        其它的元素都会被忽略。
+      -->
+      <div
+        class="scrollBox"
+        style="overflow: hidden;width: 90%; height: 200px;border: 1px solid red"
+      >
+        <div class="box">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor
+          urna, euismod ac pretium id, ornare sit amet elit. Suspendisse in
+          eleifend tellus, et semper dolor. Aliquam nec convallis orci.
+          Pellentesque ultricies, odio id tincidunt tempus, leo nisl fermentum
+          orci, at pulvinar mauris diam vel urna. Nulla dui turpis, aliquam
+          tempor massa ac, venenatis facilisis enim. Pellentesque finibus ligula
+          a odio molestie, eget blandit augue iaculis. Maecenas finibus
+          tristique iaculis. Mauris commodo, neque suscipit eleifend mollis,
+          ligula arcu molestie quam, aliquam aliquam nulla elit pulvinar libero.
+          Donec accumsan, orci et eleifend imperdiet, diam lacus luctus lacus,
+          eu tempus massa massa ut lectus. Integer interdum augue at ex
+          tristique lobortis. Pellentesque nec dignissim diam, vel mollis eros.
+          Morbi maximus, arcu a porttitor lacinia, ante ipsum semper tellus, sed
+          aliquam elit ligula et diam. Etiam id nisi ut est consequat tincidunt.
+          Fusce dictum ipsum sit amet nulla fringilla, non commodo orci
+          tincidunt. Nam finibus varius
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- 微信项目需要加上这个脚本 -->
+  <script src="../js/isWexin.js"></script>
+  <!-- 这里使用的common下的插件库，其中包括了BScroll -->
+  <script src="../common/bscroll.min.js"></script>
+  <script>
+    // (微信项目)给需要滚动的元素使用BScroll
+    var scroll = document.getElementsByClassName('scrollBox')[0];
+    var myscroll = new BScroll(scroll);
+  </script>
+</html>

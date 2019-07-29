@@ -1,0 +1,94 @@
+@import '../stylus/index.styl'
+@import '../tools.styl'
+.wrapper
+  width 100vw
+  height 100vh
+  overflow hidden
+  background-color $c_lgray
+  .search_box
+    padding .306667rem /* 23/75 */ .346667rem /* 26/75 */
+    .search_content
+      border-radius .666667rem /* 50/75 */
+      height .933333rem /* 70/75 */
+      padding 0 .266667rem /* 20/75 */
+      img 
+        width .4rem /* 30/75 */
+        height @width
+        margin-right.266667rem /* 20/75 */
+      input 
+        border none
+        font-size $fs-m
+        &::placeholder
+          color $c_dgray
+  .nav_box
+    font-size $fs-l
+    height .88rem /* 66/75 */
+    .nav_item
+      // width .533333rem /* 40/75 */
+      margin  0 .4rem /* 30/75 */
+      flex-center()
+      &.nav-active
+          position relative
+          font-size: $fs-xl
+          font-weight bold
+          &::after
+            position absolute
+            content ''
+            width .533333rem /* 40/75 */
+            height .08rem /* 6/75 */
+            background-color $c_red
+            border-radius .04rem /* 3/75 */
+            bottom -.1rem /* 10/75 */
+  .content_list
+    padding .32rem /* 24/75 */
+    overflow auto
+    .list_item
+      padding .68rem /* 51/75 */ .533333rem /* 40/75 */ .386667rem /* 29/75 */ .533333rem /* 40/75 */ 
+      .avatar_box
+        .avatar
+          width 1.12rem /* 84/75 */
+          height @width
+          border-radius 50%
+          object-fit cover
+        .avator_name_box
+          padding 0 .266667rem /* 20/75 */
+          .name_box
+            h3
+              font-size $fs-l
+              font-weight:bold
+            .tip
+              width .906667rem /* 68/75 */
+              height .426667rem /* 32/75 */
+              flex-center()
+              border-radius .4rem /* 30/75 */
+              font-size $fs-xxs
+              margin 0 .266667rem /* 20/75 */
+          .time
+            font-size $fs-s
+      .list_text
+        color #231815
+        font-size $fs-s
+        padding .266667rem /* 20/75 */ 0
+        .topic
+          font-size $fs-l
+          padding-top .533333rem /* 40/75 */
+          span 
+           padding-right .133333rem /* 10/75 */
+        .list_imgs
+          padding-top: .163333rem /* 10/75 */
+          .list_imgs_item
+            object-fit cover
+            margin-right .133333rem /* 10/75 */
+            margin-bottom 0.13rem
+            &:only-child
+              width 6.213333rem /* 466/75 */
+              height 4.666667rem /* 350/75 */
+            &:first-child:nth-last-child(2),&:first-child:nth-last-child(2) ~ .list_imgs_item,&:first-child:nth-last-child(4),&:first-child:nth-last-child(4) ~ .list_imgs_item
+              width 4.0rem /* 466/75 */
+              height 2.666667rem /* 350/75 */
+            &:first-child:nth-last-child(3),&:first-child:nth-last-child(3) ~ .list_imgs_item,
+              width 2.593333rem /* 202/75 */
+              height @width
+            &:first-child:nth-last-child(5),&:first-child:nth-last-child(5) ~ .list_imgs_item
+              width 2.593333rem /* 202/75 */
+              height @width

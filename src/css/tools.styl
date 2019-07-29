@@ -1,7 +1,91 @@
-icon_bg(url,w,h=w)
-    width w
-    height h
-    display block
-    background url(url)
-    background-repeat no-repeat
-    background-size 100% 100%
+icon_bg(url, w, h = w)
+  width w
+  height h
+  display block
+  background url(url)
+  background-repeat no-repeat
+  background-size 100% 100%
+// color
+$c_white = #fff
+$c_lgray = #F7F7F7
+$c_gray = #B2B2B2
+$c_dgray = #808080
+$c_blue = #5C87EB
+$c_dblue = #3F75FB
+$c_orange = #FE941C
+$c_red = #FF1D36
+
+// font-size
+$fs-xxs = .266667rem /* 20/75 */
+$fs-xs = .293333rem /* 22/75 */
+$fs-s = .32rem /* 24/75 */
+$fs-m = .373333rem /* 28/75 */
+$fs-l = .4rem /* 30/75 */
+$fs-xl = .48rem /* 36/75 */
+// color
+.white
+  color $c_white
+.lgray
+  color $c_lgray
+.gray
+  color $c_gray
+.dgray
+  color $c_dgray
+.blue
+  color $c_blue
+.dblue
+  color $c_dblue
+.orange
+  color $c_orange
+.red
+  color $c_red
+.dark
+  color #00000
+// bg-color
+.bg-white
+  background-color:  $c_white
+.bg-lgray
+  background-color:  $c_lgray
+.bg-gray
+  background-color:  $c_gray
+.bg-dgray
+  background-color:  $c_dgray
+.bg-blue
+  background-color:  $c_blue
+.bg-dblue
+  background-color:  $c_dblue
+.bg-orange
+  background-color:  $c_orange
+.bg-red
+  background-color:  $c_red
+// felx
+.d-flex
+  display flex
+.flex-column
+  flex-direction column
+.flex-wrap
+  flex-wrap wrap
+.flex-1
+  flex 1
+// 横向排列
+.jc-start
+  justify-content flex-start
+.jc-end
+  justify-content flex-end
+.jc-between
+  justify-content space-between
+.jc-around
+  justify-content space-around
+.jc-center
+  justify-content center
+// 纵向排列
+.ai-start
+  align-items flex-start
+.ai-end
+  align-items flex-end
+.ai-between
+  align-items space-between
+.ai-around
+  align-items space-around
+.ai-center
+  align-items center

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="reg_wrapper">
+        <div class="reg_head">
+            <img class="head_pic" src="../images/register/head_pic.jpg" alt="">
+            <div class="head_info">
+                <div class="id_title">
+                    <i class="id_pic"></i>
+                    <span class="id_ctx">微信昵称:</span>
+                </div>
+                <span class="id_name">邓志杰</span>
+            </div>
+        </div>
+        <ul class="reg_body">
+            <li>
+                <span>姓名:</span>
+                <span>
+                    <input type="text" placeholder="请填写真实姓名">
+                </span>
+            </li>
+            <li>
+                <span>性别:</span>
+                <span>
+                    <input type="text" placeholder="请填写性别">
+                </span>
+            </li>
+            <li>
+                <span>年龄:</span>
+                <span>
+                    <input type="number" placeholder="请填写年龄">
+                </span>
+            </li>
+            <li>
+                <span>手机号码:</span>
+                <span>
+                    <input type="tel" placeholder="请填写手机号">
+                </span>
+            </li>
+            <li>
+                <span>所属:</span>
+                <span>
+                    <label for="community">
+                        <i class="radioStyle community active"></i>
+                        社区
+                        <input type="radio" id="community" name="subordinate" value="社区">
+                    </label>
+                    <label for="school">
+                        <i class="radioStyle school"></i>
+                        学校
+                        <input type="radio" id="school" name="subordinate" value="学校">
+                    </label>
+                </span>
+            </li>
+            <li>
+                <span>所属社区:</span>
+                <span>
+                    <label for="subordinate">
+                        <select name="community" id="subordinate">
+                            <option value="1">第一社区</option>
+                            <option value="2">第二社区</option>
+                            <option value="3">第三社区</option>
+                            <option value="4">第四社区</option>
+                        </select>
+                        <i class="select_icon"></i>
+                    </label>
+                </span>
+            </li>
+        </ul>
+        <button class="reg_sure"></button>
+    </div>
+</body>
+<script src="../js/springback.js"></script>
+<script src="../js/register.js"></script>
+</html>

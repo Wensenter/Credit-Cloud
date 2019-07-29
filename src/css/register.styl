@@ -1,0 +1,119 @@
+@import './tools.styl';
+.reg_wrapper
+    background rgba(247,247,247,1)
+    width 100vw
+    height 100vh
+    padding 0.26rem 0.25rem 0 0.21rem
+    font-weight 500
+    .reg_head
+        width 7.04rem 
+        height 1.85rem
+        background #ffffff
+        border-radius 0.2rem
+        display flex
+        justify-content center
+        align-items center
+        .head_pic
+            width 1.04rem
+            height 1.04rem
+            border-radius 50%
+            margin-left 0.81rem
+        .head_info
+            flex 1
+            font-size 0
+            display flex
+            .id_title
+                display flex
+                padding-left 0.45rem
+                .id_pic
+                    icon_bg('../images/register/id_pic.png',0.32rem)
+                .id_ctx
+                    margin-left 0.08rem
+                    margin-right 0.34rem
+                    font-size 0.3rem
+                    color #3D3D3D
+            .id_name
+                flex 1
+                font-size 0.3rem
+                color #B2B2B2
+    .reg_body
+        display block
+        width 7.04rem
+        height 7.56rem
+        background #ffffff
+        border-radius 0.2rem
+        margin-top 0.26rem
+        &>li
+            font-size 0.3rem
+            width 6.22rem
+            height 1.25rem
+            margin-left 0.43rem
+            margin-right 0.39rem
+            border-bottom 1px solid #F3F6F7
+            display flex
+            justify-content space-between
+            align-items center
+            & input,& label,& select
+                -webkit-tap-highlight-color transparent
+            &:last-child
+                border 0
+            &>span:first-child
+                width 1.95rem
+                color #3D3D3D
+                padding-left 0.45rem
+            &>span:last-child
+                flex 1
+                height 1.25rem
+                line-height 1.25rem
+                display flex
+                align-items center
+                &>input 
+                    border 0
+                    outline none
+                    font-size 0.3rem
+                    color #B2B2B2
+                    &::-webkit-input-placeholder
+                        color #B2B2B2
+                &>label
+                    display flex
+                    align-items center
+                    width 1.2rem
+                    position relative
+                    &>i
+                        icon_bg('../images/register/radio_unselect.png',0.24rem)
+                        margin-right 0.17rem
+                        &.active
+                            icon_bg('../images/register/radio_select.png',0.24rem)
+                    &>input
+                        position absolute
+                        top 0
+                        left 0
+                        width 100%
+                        height 100%
+                        visibility hidden
+        &>li:last-child>span:last-child
+            &>label
+                flex 1
+                display flex
+                justify-content space-between             
+                &>select 
+                    background transparent
+                    outline none 
+                    border 0
+                    font-size 0.3rem
+                    color #B2B2B2
+                &>.select_icon
+                    icon_bg('../images/register/right_arrow.png',0.14rem,0.24rem)
+                    margin-right 0.33rem
+    .reg_sure
+        width 4.68rem
+        height 0.82rem
+        margin 0.92rem auto 0
+        display block
+        background url('../images/register/sureButton.png')
+        background-size 100% 100%
+        background-repeat no-repeat
+        border 0
+        outline none
+        -webkit-tap-highlight-color transparent
+                

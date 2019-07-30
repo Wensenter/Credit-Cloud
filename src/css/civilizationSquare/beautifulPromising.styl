@@ -1,0 +1,63 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+@import './public.styl'
+.content
+    .children_tab
+        position relative
+        &>i
+            icon_bg('../../images/civilizationSquare/search_icon.png',.373333rem /* 28/75 */) 
+            position absolute
+            right .64rem /* 48/75 */
+    .promising_item
+        width 9.52rem /* 714/75 */
+        height 6.12rem /* 459/75 */
+        box-sizing border-box
+        margin 0 auto .346667rem /* 26/75 */
+        padding .44rem /* 33/75 */.573333rem /* 43/75 */0
+        background #ffffff
+        border-radius .266667rem /* 20/75 */
+        .ctx
+            height 4.733333rem /* 355/75 */
+            display flex
+            justify-content space-between
+            align-items center
+            .item_content
+                &>p
+                    margin-bottom .16rem /* 12/75 */
+                    font-weight 500
+                    font-size 0
+                    .educationActivities
+                        icon_bg('../../images/civilizationSquare/educationActivities_icon.png',.666667rem /* 50/75 */)
+                        display inline-block
+                    .YoGa
+                        icon_bg('../../images/civilizationSquare/YogaActivities_icon.png',.666667rem /* 50/75 */)
+                        display inline-block
+                    &>i 
+                        vertical-align middle
+                        margin-right .133333rem /* 10/75 */                    
+                    .title
+                        vertical-align middle
+                        color #000000
+                        font-size .373333rem /* 28/75 */
+                    .text
+                        vertical-align middle
+                        display inline-block
+                        margin-left .106667rem /* 8/75 */
+                        font-size .373333rem /* 28/75 */
+                        color #B2B2B2
+            &>img
+                width 3.146667rem /* 236/75 */
+                height 2.466667rem /* 185/75 */
+        &>button
+            display block
+            width 1.866667rem /* 140/75 */
+            height .693333rem /* 52/75 */
+            margin 0 auto
+            outline none
+            border 0
+        .signUp
+            background url('../../images/civilizationSquare/singUp_icon.png')
+            background-size 100% 100%
+        .alreadyExpired
+            background url('../../images/civilizationSquare/alreadyExpired_icon.png')
+            background-size 100% 100%

@@ -1,54 +1,56 @@
 @import './tools.styl';
+@import './stylus/index.styl'
 .reg_wrapper
     background rgba(247,247,247,1)
     width 100vw
     height 100vh
-    padding 0.26rem 0.25rem 0 0.21rem
+    padding .346667rem /* 26/75 */ .333333rem /* 25/75 */ 0 .28rem /* 21/75 */
     font-weight 500
     .reg_head
-        width 7.04rem 
-        height 1.85rem
+        width 9.386667rem /* 704/75 */
+        height 2.466667rem /* 185/75 */
         background #ffffff
-        border-radius 0.2rem
+        border-radius .266667rem /* 20/75 */
         display flex
         justify-content center
         align-items center
         .head_pic
-            width 1.04rem
-            height 1.04rem
+            width 1.386667rem /* 104/75 */
+            height 1.386667rem /* 104/75 */
             border-radius 50%
-            margin-left 0.81rem
+            margin-left 1.08rem /* 81/75 */
         .head_info
             flex 1
             font-size 0
             display flex
             .id_title
                 display flex
-                padding-left 0.45rem
+                padding-left .6rem /* 45/75 */
+                align-items center
                 .id_pic
-                    icon_bg('../images/register/id_pic.png',0.32rem)
+                    icon_bg('../images/register/id_pic.png',.426667rem /* 32/75 */)
                 .id_ctx
-                    margin-left 0.08rem
-                    margin-right 0.34rem
-                    font-size 0.3rem
+                    margin-left .106667rem /* 8/75 */
+                    margin-right .453333rem /* 34/75 */
+                    font-size .4rem /* 30/75 */
                     color #3D3D3D
             .id_name
                 flex 1
-                font-size 0.3rem
+                font-size .4rem /* 30/75 */
                 color #B2B2B2
     .reg_body
         display block
-        width 7.04rem
-        height 7.56rem
+        width 9.386667rem /* 704/75 */
+        height 10.08rem /* 756/75 */
         background #ffffff
-        border-radius 0.2rem
-        margin-top 0.26rem
+        border-radius .266667rem /* 20/75 */
+        margin-top .346667rem /* 26/75 */
         &>li
-            font-size 0.3rem
-            width 6.22rem
-            height 1.25rem
-            margin-left 0.43rem
-            margin-right 0.39rem
+            font-size .4rem /* 30/75 */
+            width 8.293333rem /* 622/75 */
+            height 1.666667rem /* 125/75 */
+            margin-left .573333rem /* 43/75 */
+            margin-right .52rem /* 39/75 */
             border-bottom 1px solid #F3F6F7
             display flex
             justify-content space-between
@@ -58,32 +60,32 @@
             &:last-child
                 border 0
             &>span:first-child
-                width 1.95rem
+                width 2.6rem /* 195/75 */
                 color #3D3D3D
-                padding-left 0.45rem
+                padding-left .6rem /* 45/75 */
             &>span:last-child
                 flex 1
-                height 1.25rem
-                line-height 1.25rem
+                height 1.666667rem /* 125/75 */
+                line-height 1.666667rem /* 125/75 */
                 display flex
                 align-items center
                 &>input 
                     border 0
                     outline none
-                    font-size 0.3rem
+                    font-size .4rem /* 30/75 */
                     color #B2B2B2
                     &::-webkit-input-placeholder
                         color #B2B2B2
                 &>label
                     display flex
                     align-items center
-                    width 1.2rem
+                    width 1.6rem /* 120/75 */
                     position relative
                     &>i
-                        icon_bg('../images/register/radio_unselect.png',0.24rem)
-                        margin-right 0.17rem
+                        icon_bg('../images/register/radio_unselect.png',.32rem /* 24/75 */)
+                        margin-right .226667rem /* 17/75 */
                         &.active
-                            icon_bg('../images/register/radio_select.png',0.24rem)
+                            icon_bg('../images/register/radio_select.png',.32rem /* 24/75 */)
                     &>input
                         position absolute
                         top 0
@@ -100,15 +102,15 @@
                     background transparent
                     outline none 
                     border 0
-                    font-size 0.3rem
+                    font-size .4rem /* 30/75 */
                     color #B2B2B2
                 &>.select_icon
-                    icon_bg('../images/register/right_arrow.png',0.14rem,0.24rem)
-                    margin-right 0.33rem
+                    icon_bg('../images/register/right_arrow.png',.186667rem /* 14/75 */,.32rem /* 24/75 */)
+                    margin-right .44rem /* 33/75 */
     .reg_sure
-        width 4.68rem
-        height 0.82rem
-        margin 0.92rem auto 0
+        width 6.24rem /* 468/75 */
+        height 1.093333rem /* 82/75 */
+        margin 1.226667rem /* 92/75 */ auto 0
         display block
         background url('../images/register/sureButton.png')
         background-size 100% 100%

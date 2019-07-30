@@ -1,0 +1,145 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+@import './public.styl'
+.hide
+    display none !important
+.show
+    display block !important
+.showFlex
+    display flex !important
+.top_tab
+    &>li.active:after
+        left .72rem /* 54/75 */
+
+.content
+    height 100vh
+    .children_tab
+        justify-content space-around
+        &>li
+            display flex
+            align-items center
+            font-weight 500
+            // #select
+            //     font-size .373333rem /* 28/75 */
+            //     border 0
+            //     background transparent
+            //     color #727373
+            .down 
+                margin-left .16rem /* 12/75 */
+                icon_bg('../../images/civilizationSquare/up_icon.png',.226667rem /* 17/75 */,.12rem /* 9/75 */)
+        .active
+            font-weight bold
+            .down
+                margin-left .16rem /* 12/75 */
+                icon_bg('../../images/civilizationSquare/down_icon.png',.226667rem /* 17/75 */,.12rem /* 9/75 */)
+            // #select
+            //     color #ff3e44
+            //     font-weight bold
+            //     font-size .4rem /* 30/75 */
+            //     &>option
+            //         color #727373
+    .generalRanking
+        display none
+        .summary
+            width 9.386667rem /* 704/75 */
+            height 2.12rem /* 159/75 */
+            display flex
+            justify-content space-around
+            align-items center
+            background #ffffff
+            border-radius .266667rem /* 20/75 */
+            margin 0 auto
+            &>li
+                display flex
+                flex-direction column
+                align-items center
+                justify-content space-around
+                position relative
+                flex 1
+                .text
+                    font-size .4rem /* 30/75 */
+                    color #727373
+                .count 
+                    font-size .453333rem /* 34/75 */
+                    color #FF6059
+                &:first-child:after
+                    content ' '
+                    width .013333rem /* 1/75 */
+                    height .426667rem /* 32/75 */
+                    background #C5C7C7
+                    position absolute
+                    right 0
+                    top .64rem /* 48/75 */
+        &>p
+            width 9.386667rem /* 704/75 */
+            height 1.64rem /* 123/75 */
+            margin 0 auto
+            display flex 
+            justify-content space-around
+            align-items center
+            border-top-left-radius .266667rem /* 20/75 */
+            border-top-right-radius .266667rem /* 20/75 */
+            background #ffffff
+            margin-top .346667rem /* 26/75 */
+            color #B2B2B2
+            &>span
+                flex 1
+                text-align center
+        &>ul
+            width 9.386667rem /* 704/75 */
+            margin 0 auto
+            background #ffffff
+            border-bottom-left-radius .266667rem /* 20/75 */
+            border-bottom-right-radius .266667rem /* 20/75 */ 
+            &>li
+                height 1.653333rem /* 124/75 */
+                border-top 1px solid #F3F6F7
+                &>ul
+                    display flex
+                    justify-content space-around
+                    align-items center
+                    color #B2B2B2
+                    height 100%
+                    &>li
+                        flex 1
+                        text-align center
+                        .first
+                            icon_bg('../../images/civilizationSquare/first_icon.png',.773333rem /* 58/75 */)
+                            display inline-block
+                        .second
+                            icon_bg('../../images/civilizationSquare/second_icon.png',.773333rem /* 58/75 */)
+                            display inline-block
+                        .third
+                            icon_bg('../../images/civilizationSquare/third_icon.png',.773333rem /* 58/75 */)
+                            display inline-block
+    .myRanking
+        width 9.386667rem /* 704/75 */
+        height 3.853333rem /* 289/75 */
+        background #ffffff
+        border-radius .266667rem /* 20/75 */
+        margin 0 auto
+        display none
+        align-items center
+        justify-content center
+        .headPic
+            width 1.333333rem /* 100/75 */
+            height 1.333333rem /* 100/75 */
+            border-radius 50%
+        .ctx
+            box-sizing border-box
+            width 4.64rem /* 348/75 */
+            display flex
+            flex-direction column
+            justify-content space-between
+            align-items flex-start
+            padding-left .293333rem /* 22/75 */
+            font-size 0
+            &>p
+                color #B2B2B2
+                font-size .373333rem /* 28/75 */
+            .title 
+                color #3E3E3E
+                font-size .4rem /* 30/75 */
+        .rankPic
+            width 1.866667rem /* 140/75 */
+            height 1.96rem /* 147/75 */

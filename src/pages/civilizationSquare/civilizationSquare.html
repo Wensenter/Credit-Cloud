@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>文明广场</title>
-    <script src="../../js/rem.js"></script>
-    <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/civilizationSquare/civilizationSquare.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <script src="../../js/flexible.js"></script>
 </head>
 <body>
     <ul class="top_tab">
@@ -16,30 +16,42 @@
     </ul>
     <div class="content">
         <ul class="children_tab">
-            <li>推荐</li>
+            <li class="active">推荐</li>
             <li>未成年人教育</li>
             <li>学习强国</li>
             <li>学习视频</li>
             <li>有奖问答</li>
         </ul>
-        <div class="swiper-container">
+        <div class="swiper-container" id="picSwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">slider1</div>
-                <div class="swiper-slide">slider2</div>
-                <div class="swiper-slide">slider3</div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../../images//civilizationSquare/test.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../../images//civilizationSquare/test.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../../images//civilizationSquare/test.jpg">
+                    </a>
+                </div>
             </div>
         </div>
         <ul class="civilizations">
-            <li>
+            <li class="border-1px">
                 <div>
                     <p class="title">
                         不忘初心,永立时代潮头-写在中国共产党成立98周年之际
-                        <span></span>
+                        <i></i>
                     </p>
                     <p class="time">2019-07-02</p>
                 </div>
             </li>
-            <li>
+            <li class="border-1px">
                 <div>
                     <p class="title">
                         暑假儿童溺水回见多发 急救方法要学会。
@@ -48,11 +60,11 @@
                 </div>
                 <img src="../../images/civilizationSquare/test.jpg">
             </li>
-            <li>
+            <li class="border-1px">
                 <div>
                     <p class="title">
                         暑假儿童溺水事件多发 急救方法要学会。
-                        <span></span>
+                        <i></i>
                     </p>
                 </div>
                 <img src="../../images/civilizationSquare/test.jpg">
@@ -60,7 +72,29 @@
         </ul>
     </div>
     <ul class="button_tab">
-
+        <li class="active">
+            <i class="suqare"></i>
+            广场
+        </li>
+        <li>
+            <i class="circle"></i>
+            文明圈
+        </li>
+        <li>
+            <i class="release"></i>
+        </li>
+        <li>
+            <i class="message">
+                <i class="count">12</i>
+            </i>
+            消息
+        </li>
+        <li>
+            <i class="my"></i>
+            我的
+        </li>
     </ul>
+    <script src="../../common/swiper.min.js"></script>
+    <script src="../../js/civilizationSquare/civilizationSquare.js"></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+@import '../tools.styl'
+@import '../stylus//mixins.styl'
+.content_list
+  height 92%
+  padding .4rem .3rem /* 30/75 */
+  overflow auto
+  // margin-top 0.2rem
+  .comment_box
+    box-shadow 0 .24rem /* 18/75 */ .32rem /* 24/75 */ 0 rgba(241,241,241,0.44)
+    border-radius .266667rem /* 20/75 */
+    margin-bottom .286667rem /* 20/75 */
+    .commtent_type
+      padding .2rem .4rem
+      font-size: $fs-m
+      font-weight:500;
+      color $c_gray
+    .comment_list
+      margin-bottom 0.3rem
+      border-radius .266667rem /* 20/75 */
+      .comment_list_item
+        margin-bottom 0.3rem
+        .commtent_avatar
+          .comment_link
+            img 
+              width .4rem /* 30/75 */
+              height .373333rem /* 28/75 */
+            span 
+              font-size: .346667rem /* 26/75 */
+              color $c_gray
+        .text
+          font-size $fs-l
+          color: #333333
+          padding .2rem 0
+.publish_comment_box
+  position absolute
+  bottom 0
+  width 100%
+  height 7%/* 98/75 */
+  .publish_input
+    width 92%
+    height 80%
+    font-size $fs-l
+    border none
+    &::placeholder
+        color $c_gray

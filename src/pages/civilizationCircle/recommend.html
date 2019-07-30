@@ -20,14 +20,18 @@
   <body>
     <div class="wrapper">
       <!-- search -->
-      <div class="search_box bg-white">
-        <div class="search_content bg-lgray d-flex jc-start  ai-center">
+      <div class="search_box bg-white d-flex jc-start  ai-center">
+        <div class="search_content bg-lgray flex-1 d-flex jc-start  ai-center">
           <img src="../../images/civilizationCircle/icon_search.png" alt="" class="icon_serch">
           <input class="search-input bg-lgray flex-1" placeholder="搜索用户名称" type="text">
         </div>
+        <!-- 取消 -->
+        <div class="canel">
+          取消
+        </div>
       </div>
       <!-- nav -->
-      <div class="nav_box bg-white d-flex jc-center ai-center">
+      <div class="nav_box circle bg-white d-flex jc-center ai-center">
         <div class="nav_item">
           推荐
         </div>
@@ -36,7 +40,7 @@
         </div>
       </div>
       <!-- list -->
-      <div class="content_list hide">
+      <div class="content_list circle">
         <div class="list_item bg-white">
           <!-- avatar -->
           <div class="avatar_box d-flex jc-start ai-start">
@@ -66,12 +70,17 @@
               <span>#文明行驶月#</span>
             </div>
             <!-- imgs -->
-            <div class="list_imgs d-flex jc-start ai-start flex-wrap">
+            <div class="list_imgs  d-flex jc-start ai-start flex-wrap hide">
               <img src="../../images/111.png" class="list_imgs_item" alt="">
               <img src="../../images/111.png" class="list_imgs_item" alt="">
               <img src="../../images/111.png" class="list_imgs_item" alt="">
               <img src="../../images/111.png" class="list_imgs_item" alt="">
               <!-- <img src="../../images/111.png" class="list_imgs_item" alt=""> -->
+            </div>
+            <!-- video -->
+            <div class="list_videos">
+              <video  src="../../images/video.mp4" id="video"></video>
+              <img src="../../images/civilizationCircle/palyBtn.png" class="playBtn">
             </div>
             <!-- addr -->
             <div class="addr d-flex jc-start ai-center">
@@ -95,122 +104,6 @@
             </div>
           </div>
         </div>
-        <div class="list_item bg-white">
-          <!-- avatar -->
-          <div class="avatar_box d-flex jc-start ai-start">
-            <img src="../../images/111.png" class="avatar" alt="">
-            <div class="avator_name_box">
-              <div class="name_box d-flex jc-start ai-center">
-                  <h3 class="dark">信用云官方小编</h3>
-                  <!-- 标签 -->
-                  <div class="tip bg-dblue white">
-                    置顶
-                  </div>
-              </div>
-              <span class="time gray">1分钟</span>
-            </div>
-          </div>
-          <!-- list-text -->
-          <div class="list_text">
-            <!-- text -->
-            <div class="text">
-              各位，本月主题是文明行驶月，大家发布瞬间可以以这个为主题，期待您的参与。
-            </div>
-            <!-- tipoc -->
-            <div class="topic blue">
-              <span>#本月主题#</span>
-              <span>#文明行驶月#</span>
-              <span>#文明行驶月#</span>
-              <span>#文明行驶月#</span>
-            </div>
-            <!-- imgs -->
-            <div class="list_imgs d-flex jc-start ai-start flex-wrap">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <!-- <img src="../../images/111.png" class="list_imgs_item" alt=""> -->
-            </div>
-            <!-- addr -->
-            <div class="addr d-flex jc-start ai-center">
-              <div class="icon_addr"></div>
-              <span class="blue">深圳市.科兴科学园</span>
-            </div>
-          </div>
-          <!-- 操作栏 -->
-          <div class="action_bar d-flex jc-between ai-center">
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_unstart.png" alt="">
-              <span>收藏</span>
-            </div>
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_comment.png" alt="">
-              <span>625</span>
-            </div>
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_like.png" alt="">
-              <span>2.2w</span>
-            </div>
-          </div>
-        </div>
-        <div class="list_item bg-white">
-          <!-- avatar -->
-          <div class="avatar_box d-flex jc-start ai-start">
-            <img src="../../images/111.png" class="avatar" alt="">
-            <div class="avator_name_box">
-              <div class="name_box d-flex jc-start ai-center">
-                  <h3 class="dark">信用云官方小编</h3>
-                  <!-- 标签 -->
-                  <div class="tip bg-dblue white">
-                    置顶
-                  </div>
-              </div>
-              <span class="time gray">1分钟</span>
-            </div>
-          </div>
-          <!-- list-text -->
-          <div class="list_text">
-            <!-- text -->
-            <div class="text">
-              各位，本月主题是文明行驶月，大家发布瞬间可以以这个为主题，期待您的参与。
-            </div>
-            <!-- tipoc -->
-            <div class="topic blue">
-              <span>#本月主题#</span>
-              <span>#文明行驶月#</span>
-              <span>#文明行驶月#</span>
-              <span>#文明行驶月#</span>
-            </div>
-            <!-- imgs -->
-            <div class="list_imgs d-flex jc-start ai-start flex-wrap">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <img src="../../images/111.png" class="list_imgs_item" alt="">
-              <!-- <img src="../../images/111.png" class="list_imgs_item" alt=""> -->
-            </div>
-            <!-- addr -->
-            <div class="addr d-flex jc-start ai-center">
-              <div class="icon_addr"></div>
-              <span class="blue">深圳市.科兴科学园</span>
-            </div>
-          </div>
-          <!-- 操作栏 -->
-          <div class="action_bar d-flex jc-between ai-center">
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_unstart.png" alt="">
-              <span>收藏</span>
-            </div>
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_comment.png" alt="">
-              <span>625</span>
-            </div>
-            <div class="action_item">
-              <img src="../../images/civilizationCircle/icon_like.png" alt="">
-              <span>2.2w</span>
-            </div>
-          </div>
-        </div>
       </div>
       <!-- search_list_box -->
       <div class="search_list_box">
@@ -222,6 +115,23 @@
               <span>男孩街道啦啦啦啦</span>
             </div>
           </div>
+          <div class="search_list_item d-flex jc-strat ai-center">
+            <img src="../../images/111.png" alt="头像">
+            <div class="search_list_right">
+              <h4>咕咕很饿</h4>
+              <span>男孩街道啦啦啦啦</span>
+            </div>
+          </div>
+          <div class="search_list_item d-flex jc-strat ai-center">
+            <img src="../../images/111.png" alt="头像">
+            <div class="search_list_right">
+              <h4>咕咕很饿</h4>
+              <span>男孩街道啦啦啦啦</span>
+            </div>
+          </div>
+
+          <!-- 只有这么多了 -->
+          <p class="search_list_mesg">只有这么多了</p>
         </div>
       </div>
     </div>
@@ -231,5 +141,6 @@
   <!-- 这里使用的common下的插件库，其中包括了BScroll -->
   <!-- <script src="../common/bscroll.min.js"></script> -->
   <script src="../../common/jquery.min.js"></script>
+  <script src="../../js/civilizationCircle/public.js"></script>
   <script src="../../js/civilizationCircle/recommend.js"></script>
 </html>

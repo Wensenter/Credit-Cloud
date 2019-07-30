@@ -5,7 +5,7 @@ $('.nav_item').on('click',function() {
 })
 
 // 操作栏
-{let actionIcon ={
+{let actionIconSrc ={
   star:'../../images/civilizationCircle/icon_start.png',
   unStar:'../../images/civilizationCircle/icon_unstart.png',
   like:'../../images/civilizationCircle/icon_like.png',
@@ -13,15 +13,28 @@ $('.nav_item').on('click',function() {
 }
 // 是否收藏
 $('.star').on('click',function(){
-  let starImg = $(this).find('img')
-  let starAlt = starImg.attr('alt')
-  if(starAlt === '未收藏') {
-    starImg.attr('alt','已收藏')
-    starImg.attr('src',isStar.star)
-    console.log(starImg.attr('src'))
+  let img = $(this).find('img')
+  let alt = img.attr('alt')
+  if(alt === '未收藏') {
+    img.attr('alt','已收藏')
+    img.attr('src',actionIconSrc.star)
   }
-  if(starAlt === '已收藏') {
-    starImg.attr('alt','未收藏')
-    starImg.attr('src',isStar.unStar)
+  if(alt === '已收藏') {
+    img.attr('alt','未收藏')
+    img.attr('src',actionIconSrc.unStar)
   }
-})}
+})
+// 是否点赞
+$('.like').on('click',function(){
+  let img = $(this).find('img')
+  let alt = img.attr('alt')
+  if(alt === '未点赞') {
+    img.attr('alt','已点赞')
+    img.attr('src',actionIconSrc.like)
+  }
+  if(alt === '已点赞') {
+    img.attr('alt','未点赞')
+    img.attr('src',actionIconSrc.unLike)
+  }
+})
+}

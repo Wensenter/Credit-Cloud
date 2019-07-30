@@ -1,9 +1,122 @@
-@import '../tools.styl';
-
+@import '../tools.styl'
+@import '../stylus/index.styl'
 .top_tab
     width 100%
-    height 1rem
+    box-sizing border-box
     background #ffffff
-    font-size 0.3rem
+    font-size .4rem /* 30/75 */
     color #000
     display flex
+    align-items center
+    padding 0 .293333rem /* 22/75 */
+    &>li
+        padding  .546667rem /* 41/75 */.173333rem /* 13/75 */.333333rem /* 25/75 */
+        font-weight 500
+        &.active
+            font-size .48rem /* 36/75 */
+            font-weight bold
+            padding-left .293333rem /* 22/75 */
+            padding-right: .293333rem /* 22/75 */
+            position relative
+            &:after
+                content ''
+                display block
+                background #FF1D36
+                border-radius .04rem /* 3/75 */
+                width .533333rem /* 40/75 */
+                height .08rem /* 6/75 */
+                position absolute
+                bottom 0
+                left .953333rem /* 71.5/75 */
+.content
+    background #F7F7F7
+    padding-bottom 1.64rem /* 123/75 */
+    .children_tab
+        height 1.24rem /* 93/75 */
+        display flex
+        align-items center
+        padding 0 .133333rem /* 10/75 */0 .133333rem /* 10/75 */
+        font-size 0
+        &>li
+            padding 0 .2rem /* 15/75 */0 .2rem /* 15/75 */
+            color #727373
+            font-size .373333rem /* 28/75 */
+            font-weight bold
+            &.active
+                color #FF3E44
+                font-size .4rem /* 30/75 */
+    .swiper-container
+        &>.swiper-wrapper
+            text-align center
+            &>.swiper-slide>a>img
+                width 9.306667rem /* 698/75 */
+                height 4.346667rem /* 326/75 */
+    .civilizations
+        width 9.293333rem /* 697/75 */
+        margin .4rem /* 30/75 */ auto 0
+        border-radius .266667rem /* 20/75 */
+        background #ffffff
+        padding 0 .48rem /* 36/75 */ 0 .52rem /* 39/75 */
+        box-sizing border-box
+        &>li
+            width 8.293333rem /* 622/75 */
+            border-1px(#F3F6F7)
+            display flex
+            padding .533333rem /* 40/75 */ 0
+            &>div
+                &>.title
+                    color #231815
+                    font-size .4rem /* 30/75 */
+                    margin-bottom .293333rem /* 22/75 */
+                    &>i
+                        vertical-align middle
+                        icon_bg('../../images/civilizationSquare/answer_icon.png',.8rem /* 60/75 */,.48rem /* 36/75 */)
+                        display inline-block
+                &>.time
+                    color #B2B2B2
+                    font-size .32rem /* 24/75 */
+            &>img
+                width 2.8rem /* 210/75 */
+                height 1.6rem /* 120/75 */
+.button_tab
+    z-index 10
+    position fixed
+    bottom 0
+    width 100%
+    background #ffffff
+    height 1.306667rem /* 98/75 */
+    display flex
+    justify-content space-around
+    &>li
+        width 1.253333rem /* 94/75 */
+        display flex
+        flex-direction column
+        align-items center
+        font-size .293333rem /* 22/75 */
+        color #B2B2B2
+        &.active
+            color #333333
+        .suqare
+            icon_bg('../../images/public/tab_square_active.png',.8rem /* 60/75 */)
+        .circle
+            icon_bg('../../images/public/tab_civilizationCircle.png',.8rem /* 60/75 */)
+        .message
+            position relative
+            icon_bg('../../images/public/tab_message.png',.8rem /* 60/75 */)
+            .count
+                icon_bg('../../images/public/message_count.png',.48rem /* 36/75 */)
+                position absolute
+                right -.093333rem /* 7/75 */
+                font-size .266667rem /* 20/75 */
+                text-align center
+                font-style normal
+                line-height .48rem /* 36/75 */
+                color #ffffff
+        .my
+            icon_bg('../../images/public/tab_my.png',.8rem /* 60/75 */)
+        .release
+            position absolute
+            bottom 0
+            icon_bg('../../images/public/tab_release.png',1.733333rem /* 130/75 */) 
+
+                

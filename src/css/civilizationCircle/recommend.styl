@@ -41,9 +41,13 @@
             bottom -.1rem /* 10/75 */
   .content_list
     padding .32rem /* 24/75 */
+    height 80%
     overflow auto
     .list_item
-      padding .68rem /* 51/75 */ .533333rem /* 40/75 */ .386667rem /* 29/75 */ .533333rem /* 40/75 */ 
+      padding .68rem /* 51/75 */ .533333rem /* 40/75 */ .286667rem /* 29/75 */ .533333rem /* 40/75 */ 
+      box-shadow 0 .24rem /* 18/75 */ .32rem /* 24/75 */ 0 rgba(241,241,241,0.44)
+      border-radius .266667rem /* 20/75 */
+      margin-bottom .286667rem /* 20/75 */
       .avatar_box
         .avatar
           width 1.12rem /* 84/75 */
@@ -69,6 +73,7 @@
         color #231815
         font-size $fs-s
         padding .266667rem /* 20/75 */ 0
+        border-bottom solid 1px #f3f6f7
         .topic
           font-size $fs-l
           padding-top .533333rem /* 40/75 */
@@ -92,3 +97,22 @@
             &:first-child:nth-last-child(5),&:first-child:nth-last-child(5) ~ .list_imgs_item
               width 2.593333rem /* 202/75 */
               height @width
+        .addr
+          .icon_addr
+            width .4rem /* 30/75 */
+            height @width 
+            bg-img('../../images/civilizationCircle/icon_addr.png')
+            margin .133333rem /* 10/75 */
+            margin-left 0
+            span 
+              font-size $fs-s
+      .action_bar
+        margin-top .366667rem /* 20/75 */
+        padding 0 .466667rem /* 20/75 */
+        .action_item
+          flex-center()
+          img 
+            width .4rem /* 30/75 */
+            height @width
+          span
+            padding: 0 .133333rem /* 10/75 */

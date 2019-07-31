@@ -4,10 +4,21 @@
 .content
     .children_tab
         position relative
+        &>input
+            color #000000
+            position absolute 
+            right .533333rem /* 40/75 */
+            height .666667rem /* 50/75 */
+            width 3.146667rem /* 236/75 */
+            background #ffffff
+            border 1px solid #cccccc
+            border-radius .266667rem /* 20/75 */
+            z-index 10
         &>i
             icon_bg('../../images/civilizationSquare/search_icon.png',.373333rem /* 28/75 */) 
             position absolute
             right .64rem /* 48/75 */
+            z-index 10
     .promising_item
         width 9.52rem /* 714/75 */
         height 6.12rem /* 459/75 */
@@ -61,3 +72,9 @@
         .alreadyExpired
             background url('../../images/civilizationSquare/alreadyExpired_icon.png')
             background-size 100% 100%
+    .publish_active
+        position fixed
+        bottom 1.8rem /* 135/75 */
+        right .333333rem /* 25/75 */
+        width 1.266667rem /* 95/75 */
+        height 1.266667rem /* 95/75 */

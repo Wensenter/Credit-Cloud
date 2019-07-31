@@ -1,0 +1,151 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+body
+    background #F7F7F7
+    height 100%
+    border 1px solid transparent
+    .detail
+        background #ffffff
+        border-radius .266667rem /* 20/75 */
+        width 8.373333rem /* 628/75 */
+        margin .373333rem /* 28/75 */ auto 0
+        padding .533333rem /* 40/75 */.506667rem /* 38/75 */
+        .content
+            border-bottom 1px solid #F3F6F7
+            padding-bottom .573333rem /* 43/75 */
+            .title
+                color #010101
+                font-size .4rem /* 30/75 */
+                font-weight bold
+            .time
+                color #B2B2B2
+                font-size .32rem /* 24/75 */
+                padding .28rem /* 21/75 */0 .36rem /* 27/75 */
+            .ctx
+                color #333333
+                font-size .4rem /* 30/75 */
+                font-weight 500
+                &>i
+                    icon_bg('../../images/civilizationSquare/answer_l_icon.png',.96rem /* 72/75 */,.533333rem /* 40/75 */)
+                    display inline-block
+                    vertical-align middle
+        .opr
+            display flex
+            padding-top .573333rem /* 43/75 */
+            &>li
+                flex 1
+                display flex
+                align-items center
+                justify-content center
+                color #B2B2B2
+                font-size .426667rem /* 32/75 */
+                font-weight 500
+                .thumb
+                    icon_bg('../../images/civilizationSquare/thumb_icon.png',.506667rem /* 38/75 */)
+                    margin-right .266667rem /* 20/75 */
+                .share
+                    icon_bg('../../images/civilizationSquare/share_icon.png',.506667rem /* 38/75 */)
+                    margin-right .266667rem /* 20/75 */
+    .viewpoint_title
+        color #B2B2B2
+        display block
+        font-size .4rem /* 30/75 */
+        margin-top .333333rem /* 25/75 */
+        margin-left .493333rem /* 37/75 */
+    .viewpoint_ctx
+        margin .266667rem /* 20/75 */ auto 0
+        width 9.386667rem /* 704/75 */
+        &>li
+            background #ffffff
+            width 8.293333rem /* 622/75 */
+            padding .533333rem /* 40/75 */.453333rem /* 34/75 */.533333rem /* 40/75 */.613333rem /* 46/75 */
+            &>div
+                display flex
+                .headPic
+                    width 1.12rem /* 84/75 */
+                    height 1.12rem /* 84/75 */
+                    border-radius 50%
+                .userCtx
+                    flex 1
+                    margin-left .266667rem /* 20/75 */
+                    font-weight 500
+                    .reply_name
+                        color #000000
+                        font-size .4rem /* 30/75 */
+                    .ctx
+                        color #333333
+                        font-size .4rem /* 30/75 */
+                    .time
+                        color #B2B2B2
+                        font-size .32rem /* 24/75 */
+                        .reply
+                            color #333333
+                &>span
+                    width 1.093333rem /* 82/75 */
+                    color #B2B2B2
+                    display flex
+                    .thumb_s
+                        icon_bg('../../images/civilizationSquare/thumb_s_icon.png',.373333rem /* 28/75 */)
+                        margin-right .12rem /* 9/75 */   
+            .reply_o
+                margin-top .226667rem /* 17/75 */
+                background #F7F7F7
+                height .853333rem /* 64/75 */    
+                line-height .853333rem /* 64/75 */
+                padding-left .266667rem /* 20/75 */
+                font-size .4rem /* 30/75 */  
+                .username
+                    color #5C87EB  
+                .reply_o_ctx
+                     color #B2B2B2  
+    .publish_box
+        z-index 10
+        position fixed
+        bottom 0
+        left 0
+        right 0
+        height 1.173333rem /* 88/75 */
+        background #ffffff
+        display flex
+        justify-content space-around
+        align-items center
+        font-size .4rem /* 30/75 */
+        color #B2B2B2
+        padding 0 .866667rem /* 65/75 */0 .84rem /* 63/75 */
+        .title
+            border 0
+            &::-webkit-input-placeholder
+                color #B2B2B2
+                font-size .4rem /* 30/75 */
+        .opr
+            display flex
+            width 3.066667rem /* 230/75 */
+            justify-content space-between 
+            .message
+                icon_bg('../../images/civilizationSquare/message_icon.png',.6rem /* 45/75 */)      
+                position relative
+                .count
+                    text-align center
+                    font-size 20px
+                    height .4rem /* 30/75 */
+                    line-height .4rem /* 30/75 */
+                    color #ffffff
+                    font-style normal
+                    icon_bg('../../images/public/message_count.png',.4rem /* 30/75 */)                    
+                    position absolute
+                    left .373333rem /* 28/75 */
+                    bottom .346667rem /* 26/75 */
+            .star
+                icon_bg('../../images/civilizationSquare/star_icon.png',.6rem /* 45/75 */)      
+            .forward
+                icon_bg('../../images/civilizationSquare/forward_icon.png',.6rem /* 45/75 */)  
+        .publish_button
+            margin-left .4rem /* 30/75 */
+            display none
+            width 1.92rem /* 144/75 */
+            height .8rem /* 60/75 */
+            line-height .8rem /* 60/75 */
+            border-radius .36rem /* 27/75 */   
+            background #EAEAEA
+            text-align center
+        

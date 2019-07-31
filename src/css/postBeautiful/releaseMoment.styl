@@ -1,0 +1,175 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+@import '../common_yl.styl'
+.wrapper
+  box-sizing border-box
+  width 100vw
+  height 100vh
+  overflow hidden
+
+// 发布瞬间release_post_box --------开始
+.release_post_box
+  width 100vw
+  height 100vh
+  // display none
+  .content_box
+    height 90%
+    padding: 0.6rem .893333rem /* 67/75 */
+    overflow scroll
+// 文本域
+.release_text_box
+  height 3.633333rem /* 250/75 */
+  font-size $fs-l
+  .release_text
+    width 100%
+    height 100%
+    border none
+    &::placeholder
+      color $c_gray
+// 图片上传
+.upImgs_box
+  max-height 6.666667rem /* 500/75 */
+  overflow hidden
+  .img_box
+    position relative
+    width 2rem /* 150/75 */
+    height 2rem
+    border-radius:  0.14rem
+    margin-right 0.3rem
+    margin-bottom 0.3rem
+    overflow hidden
+    .show_img
+      width 100%
+      height 100%
+      object-fit: cover
+    .closeImg
+      position absolute
+      top 0
+      right 0
+      width .506667rem /* 38/75 */
+      height @width 
+      cursor pointer
+      click-area(0.3rem)
+    &.upImg_icon_box
+        position relative
+        bg-img('../../images/postBeautiful/add_bg.png')
+        .add_img
+          absolute-center()
+          width .613333rem /* 46/75 */
+          height @width
+        .add_input
+          absolute-center()
+          height 100%
+          height 100%
+          opacity 0
+// 标签
+.release_tip_box
+  margin-top .3rem
+  .release_tip_item
+    width 2.293333rem /* 172/75 */
+    height .72rem /* 54/75 */
+    border-radius .36rem /* 27/75 */
+    border solid #EDEDED .026667rem /* 2/75 */
+    margin-right 0.3rem
+    margin-bottom 0.3rem
+    color $c_dgray
+    &.addr_active
+        color: $c_dgray
+        background-color #FAFAFA
+    &.tip_active
+        color: #5C87EB
+    .tip_icon
+      width .4rem /* 30/75 */
+      height @width
+    span 
+      padding-right .1rem
+//操作栏
+.action_bar
+  box-sizing border-box
+  width 100%
+  background-color #fff
+  padding: 0.4rem .893333rem /* 67/75 */
+  flex-center()
+  .send_box
+    width 2.866667rem /* 140/75 */
+    height .92rem /* 54/75 */
+    flex-center()
+    background: linear-gradient(to right, #F77A54 , #FF635B)
+    border-radius: .5rem
+    font-size .4rem /* 24/75 */
+
+// 发布瞬间release_post_box --------结束
+
+
+// 搜索Page release_search_box --------开始
+.release_search_box
+  width 100%
+  height 100%
+  display none
+  overflow auto
+
+
+// 搜索标签/地址
+.search_content_box
+  height 86%
+  padding .32rem /* 24/75 */
+  border-radius .266667rem /* 20/75 */
+  overflow hidden
+  .search_content
+    padding .32rem /* 24/75 */
+    height 96%
+    border-radius .266667rem /* 20/75 */
+    .search_tip_list
+      font-size: $fs-s 
+      letter-spacing .033333rem /* 4/75 */
+      .search_tip_items
+          margin 0.24rem 0
+        .search_tip_item
+          padding 0.05rem 0.2rem
+          border  solid .026667rem /* 2/75 */ rgba(237,237,237,1)
+          background-color: #FAFAFA
+          border-radius: .56rem /* 27/75 */
+          margin-right 0.3rem
+          margin-bottom 0.3rem
+          .tip_icon
+            width .366667rem /* 20/75 */
+          span 
+            padding-right 0.1rem
+      &.history_lists
+          position relative
+          .del_list_box
+            position absolute
+            width 2.066667rem /* 80/75 */
+            height .4rem /* 30/75 */
+            top 0
+            right 0
+            span 
+              color: #B2B2B2
+              padding: 0 0.1rem
+            img 
+              width .4rem /* 30/75 */
+    .confirm_add
+      width 6.24rem /* 468/75 */
+      height 1.093333rem /* 82/75 */
+      bg-img('../../images/postBeautiful/submit_tip.png')
+      margin auto 
+      margin-top .6rem
+    &.search_addr_content
+      padding 0.5rem
+      .search_addr_list
+        border-bottom solid .013333rem /* 1/75 */ #F3F6F7
+        padding .48rem /* 36/75 */ 0
+        &:first-child
+            padding-top 0
+        img 
+          width: .4rem /* 30/75 */
+          height @width
+          margin-right 0.26rem
+        .search_addr_right
+          p
+            font-size $fs-m
+          span
+            color: #B3B3B3
+            font-size $fs-xs
+
+

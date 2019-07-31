@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>发布美好瞬间</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../../css/postBeautiful/releaseMoment.css"
+    />
+    <script src="../../js/flexible.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- 发布瞬间release_post_box-->
+      <div class="release_post_box">
+          <div class="content_box">
+            <!-- 文字textare -->
+            <div class="release_text_box">
+              <textarea class="release_text" placeholder="记录文明这一刻，不少于30字，后台审核后即刻显示。"></textarea>
+            </div>
+            <!-- 上传图片 -->
+            <div class="upImgs_box d-flex flex-wrap jc-start ai-center">
+              <!-- img -->
+              <div class="img_box show_img_box">
+                <img src="../../images/111.png" class="show_img">
+                <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+              </div>
+              <!-- 上传 -->
+              <div class="img_box upImg_icon_box">
+                <img src="../../images/postBeautiful/upImgIcon.png" class="add_img">
+                <input type="file" name="file" id="upImg" class="add_input">
+              </div>
+            </div>
+            <!-- 标签 -->
+            <div class="release_tip_box d-flex flex-wrap jc-start ai-center">
+              <div class="release_tip_item release_tip_item_add d-flex jc-center ai-center">
+                <span>#添加标签</span>
+              </div>
+              <!-- tip_active激活样式 -->
+              <div class="release_tip_item tip_active d-flex jc-center ai-center">
+                <span>#什么标签</span>
+                <img class="tip_icon close" src="../../images/postBeautiful/close.png" alt="">
+              </div>
+            </div>
+            <!-- 定位 -->
+            <div class="release_tip_box release_addr_box d-flex flex-wrap jc-start ai-center">
+              <div class="release_tip_item release_addr_add d-flex jc-center ai-center">
+                <img class="tip_icon" src="../../images/postBeautiful/addrIcon.png" alt="">
+                <span>你在哪里</span>
+            </div>
+              <!-- addr_active是默认定位的样式 -->
+              <div class="release_tip_item addr_active d-flex jc-center ai-center">
+                <span>金达科技中心</span>
+              </div>
+            </div>
+            <!-- 底部操作栏 -->
+          <div class="action_bar">
+            <div class="send_box white">
+              发布
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 搜索标签Page release_search_box-->
+      <div class="release_search_box release_tip_page bg-lgray">
+        <!-- search_box -->
+        <div class="search_box bg-white d-flex jc-start  ai-center">
+          <div class="search_content bg-lgray flex-1 d-flex jc-start  ai-center">
+            <img src="../../images/civilizationCircle/icon_search.png" alt="" class="icon_serch">
+            <input class="search-input bg-lgray flex-1" placeholder="添加标签可获更多互动" type="text">
+          </div>
+          <!-- 取消 -->
+          <div class="canel">
+            取消
+          </div>
+        </div>
+        <!-- 搜索标签 Page-->
+        <div class="search_content_box search_tip_box bg-lgray">
+          <div class="search_content search_tip_content bg-white">
+          <!-- 已选标签 -->
+            <div class="search_tip_list">
+              <h2 class="gray">#已选标签</h2>
+              <div class="search_tip_items d-flex jc-start flex-wrap  ai-center">
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                  <span>#传统文化</span>
+                  <img class="tip_icon close" src="../../images/postBeautiful/close.png" alt="">
+                </div>
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                  <span>#防静电撒谎放假啊哈</span>
+                  <img class="tip_icon close" src="../../images/postBeautiful/close.png" alt="">
+                </div>
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                    <span>#防静电</span>
+                    <img class="tip_icon close" src="../../images/postBeautiful/close.png" alt="">
+                  </div>
+              </div>
+            </div>
+            <!-- 历史标签 -->
+            <div class="search_tip_list history_lists">
+              <!-- 删除 -->
+              <div class="del_list_box d-flex jc-end ai-center">
+                <img src="../../images/postBeautiful/lese.png" class="del_img">
+                <span>清除</span>
+              </div>
+              <h2 class="gray">#历史标签</h2> 
+              <div class="search_tip_items d-flex jc-start flex-wrap  ai-center">
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                  <span>#传统文化</span>
+                </div>
+                <div class="search_tip_item lblack d-flex jc-between  ai-center">
+                  <span>#防静电撒谎放假啊哈</span>
+                </div>
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                    <span>#防静电</span>
+                  </div>
+              </div>
+            </div>
+            <!-- 推荐标签 -->
+            <div class="search_tip_list">
+              <h2 class="gray">#推荐标签</h2> 
+              <div class="search_tip_items d-flex jc-start flex-wrap  ai-center">
+                <div class="search_tip_item blue d-flex jc-between  ai-center">
+                  <span>#传统文化</span>
+                </div>
+                <div class="search_tip_item lblack d-flex jc-between  ai-center">
+                  <span>#防静电撒谎放假啊哈</span>
+                </div>
+                <div class="search_tip_item lblack d-flex jc-between  ai-center">
+                    <span>#防静电</span>
+                  </div>
+              </div>
+            </div>
+            <!-- 确认添加 -->
+            <div class="confirm_add">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 搜索位置Page release_search_box-->
+      <div class="release_search_box release_addr_page bg-lgray">
+        <!-- search_box -->
+        <div class="search_box bg-white d-flex jc-start  ai-center">
+          <div class="search_content bg-lgray flex-1 d-flex jc-start  ai-center">
+            <img src="../../images/civilizationCircle/icon_search.png" alt="" class="icon_serch">
+            <input class="search-input bg-lgray flex-1" placeholder="搜索附近地址" type="text">
+          </div>
+          <!-- 取消 -->
+          <div class="canel">
+            取消
+          </div>
+        </div>
+        <!-- 所在位置  -->
+        <div class="search_content_box search_addr_box bg-lgray">
+          <div class="search_content search_addr_content bg-white">
+            <!-- 不显示位置 -->
+            <div class="search_addr_list d-flex jc-start flex-1  ai-center">
+              <img src="../../images/postBeautiful/addrIcon_active.png">
+              <div class="search_addr_right">
+                <p>不显示位置</p>
+              </div>
+            </div>
+            <!-- 深圳市 -->
+            <div class="search_addr_list d-flex jc-start flex-1  ai-center">
+              <img src="../../images/postBeautiful/addrIcon_active.png">
+              <div class="search_addr_right">
+                <p>深圳市</p>
+              </div>
+            </div>
+            <!-- 其位置 -->
+            <div class="search_addr_list d-flex jc-start flex-1  ai-center">
+              <img src="../../images/postBeautiful/addrIcon.png">
+              <div class="search_addr_right">
+                <p>深圳市</p>
+                <span>深圳市南山区科丰路8号</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <!-- 微信项目需要加上这个脚本 -->
+  <!-- <script src="../js/isWexin.js"></script> -->
+  <script src="../../common/jquery.min.js"></script>
+  <script src="../../js/postBeautiful/releaseMoment.js"></script>
+</html>

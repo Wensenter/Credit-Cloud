@@ -11,3 +11,9 @@ $('.comment_link').on('click',function(){
     img.attr('src',actionIconSrc.unLike)
   }
 })
+
+// 回复
+$('.comment_text').on('click',function() {
+  let name = $(this).attr('data-name')
+  $('.publish_input').attr('placeholder',name).val('').focus()
+})

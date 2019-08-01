@@ -71,16 +71,23 @@
 .release_tip_box
   margin-top .3rem
   .release_tip_item
-    width 2.293333rem /* 172/75 */
+    // width 2.293333rem /* 172/75 */
     height .72rem /* 54/75 */
     border-radius .36rem /* 27/75 */
     border solid #EDEDED .026667rem /* 2/75 */
     margin-right 0.3rem
-    margin-bottom 0.3rem
+    margin-bottom 0.1rem
+    padding 0 .2rem
     color $c_dgray
+    background-color #FAFAFA
     &.addr_active
-        color: $c_dgray
-        background-color #FAFAFA
+        width 3.5rem
+        color: $c_blue
+        border none
+        background-color #ffffff
+        .addr_text
+          width 80%
+          single-line()
     &.tip_active
         color: #5C87EB
     .tip_icon
@@ -93,11 +100,13 @@
   box-sizing border-box
   width 100%
   background-color #fff
-  padding: 0.4rem .893333rem /* 67/75 */
+  // padding: 0.4rem .893333rem /* 67/75 */
   flex-center()
+  justify-content flex-end
   .send_box
-    width 2.866667rem /* 140/75 */
-    height .92rem /* 54/75 */
+    float right
+    width 1.866667rem /* 140/75 */
+    height .72rem /* 54/75 */
     flex-center()
     background: linear-gradient(to right, #F77A54 , #FF635B)
     border-radius: .5rem

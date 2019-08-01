@@ -1,4 +1,5 @@
 window.onload = function(){
+    //评论栏切换
     $('.publish_box .title').focus(function(){
         $('.publish_box .opr').css({
             'display':'none'
@@ -32,5 +33,14 @@ window.onload = function(){
             'height': 'auto',
             'borderRadius': '0'
         }) 
+    })
+
+    //收藏
+    $('.opr .star').click(function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active')
+        }else{
+            $(this).addClass('active')
+        }
     })
 }

@@ -94,3 +94,54 @@ $fs-xl = .48rem /* 36/75 */
   align-items space-around
 .ai-center
   align-items center
+
+// 底部操作栏
+.button_tab
+  z-index 10
+  position fixed
+  bottom 0
+  width 100%
+  background #ffffff
+  height 1.306667rem /* 98/75 */
+  display flex
+  justify-content space-around
+  &>li
+      width 1.253333rem /* 94/75 */
+      display flex
+      flex-direction column
+      align-items center
+      font-size .293333rem /* 22/75 */
+      color #B2B2B2
+      .suqare
+          icon_bg('../../images/public/tab_square.png',.8rem /* 60/75 */)
+      .circle
+          icon_bg('../../images/public/tab_civilizationCircle.png',.8rem /* 60/75 */)
+      .message
+        position relative
+        icon_bg('../../images/public/tab_message.png',.8rem /* 60/75 */)
+        .count
+          icon_bg('../../images/public/message_count.png',.48rem /* 36/75 */)
+          position absolute
+          right -.093333rem /* 7/75 */
+          font-size .266667rem /* 20/75 */
+          text-align center
+          font-style normal
+          line-height .48rem /* 36/75 */
+              color #ffffff
+      .my
+        icon_bg('../../images/public/tab_my.png',.8rem /* 60/75 */)
+      .release
+        position absolute
+        bottom 0
+        icon_bg('../../images/public/tab_release.png',1.733333rem /* 130/75 */)
+      &.active
+        color #333333
+        .suqare
+          icon_bg('../../images/public/tab_square_active.png',.8rem /* 60/75 */)
+        .circle
+          icon_bg('../../images/public/tab_civilizationCircle_active.png',.8rem /* 60/75 */)
+        .message
+          position relative
+          icon_bg('../../images/public/tab_message_active.png',.8rem /* 60/75 */)
+        .my
+          icon_bg('../../images/public/tab_my_active.png',.8rem /* 60/75 */)

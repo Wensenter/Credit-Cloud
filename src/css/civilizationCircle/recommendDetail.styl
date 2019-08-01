@@ -35,7 +35,8 @@
   position absolute
   bottom 0
   width 100%
-  padding 0.3rem 0
+  box-sizing border-box
+  padding 0.3rem 0.5rem
   .publish_input
     width 92%
     height 80%
@@ -43,3 +44,11 @@
     border none
     &::placeholder
         color $c_gray
+  .send-box
+    width 1.866667rem /* 140/75 */
+    height .72rem /* 54/75 */
+    flex-center()
+    background: linear-gradient(to right, #F77A54 , #FF635B)
+    border-radius: .5rem
+    font-size .4rem /* 24/75 */
+    margin-left .2rem

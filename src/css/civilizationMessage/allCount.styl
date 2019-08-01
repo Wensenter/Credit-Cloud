@@ -1,0 +1,31 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+  .wrapper
+    width 100vw
+    height 100vh
+    overflow hidden
+    padding .32rem /* 24/75 */
+    box-sizing border-box
+    .all-count-items
+      padding 0 .56rem /* 42/75 */
+      border-radius .266667rem /* 20/75 */
+      box-shadow 0 .24rem /* 18/75 */ .32rem /* 24/75 */ 0 rgba(241,241,241,0.44)
+      .all-count-item
+        padding .4rem /* 30/75 */ 0
+        border-bottom solid .013333rem /* 1/75 */ #F3F6F7 
+        &:last-child
+            border none
+        .text
+          padding 0 .2rem
+          color #333333
+          font-size .4rem /* 30/75 */
+          font-weight bold
+        .count
+          padding 0 .2rem
+        .item_icon
+          width .586667rem /* 44/75 */
+          height @width 
+          font-size .4rem /* 30/75 */
+        .arrow
+          width .213333rem /* 16/75 */
+          height .373333rem /* 28/75 */

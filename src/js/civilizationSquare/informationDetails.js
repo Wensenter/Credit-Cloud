@@ -43,4 +43,12 @@ window.onload = function(){
             $(this).addClass('active')
         }
     })
+
+    //播放视频
+    $('.video_box .paly_icon').click(function(){
+        var $V = document.getElementsByTagName('video')[0];
+        $V.play();
+        $('.video_box video').attr('controls',true);
+        $(this).fadeOut();
+    })
 }

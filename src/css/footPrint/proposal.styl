@@ -1,0 +1,125 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+body
+    background #F7F7F7
+    border-top 1px solid transparent
+    border-bottom 1px solid transparent
+    .proposal
+        width 8.293333rem /* 622/75 */
+        height 5.533333rem /* 415/75 */
+        border-radius .266667rem /* 20/75 */
+        padding .533333rem /* 40/75 */
+        background #ffffff
+        margin .32rem /* 24/75 */ auto
+        display flex
+        flex-direction column
+        justify-content space-between
+        &>textarea
+            width 8.293333rem /* 622/75 */
+            height 3.266667rem /* 245/75 */
+            border 0
+            background transparent
+            &::-webkit-input-placeholder
+                color #B2B2B2
+        &>div
+            display flex
+            height 2rem /* 150/75 */
+            justify-content flex-start
+            align-items flex-end
+            .addPic_box
+                width 2rem /* 150/75 */
+                height 2rem /* 150/75 */
+                position relative
+                .addPic
+                    .add_bg,&>input
+                        position absolute
+                        top 0
+                        left 0
+                        width 100%
+                        height 100%
+                    .add_icon
+                        width .613333rem /* 46/75 */
+                        height .613333rem /* 46/75 */
+                        position absolute
+                        top .48rem /* 36/75 */
+                        left 50%
+                        transform translateX(-50%)
+                    &>span
+                        font-size .32rem /* 24/75 */
+                        color #B2B2B2
+                        width 1.333333rem /* 100/75 */
+                        position absolute
+                        bottom .293333rem /* 22/75 */
+                        left 50%
+                        transform translateX(-50%)
+                &>input
+                    visibility hidden
+            &>span
+                color #333333
+                display flex
+                justify-content space-around
+                align-items center
+                margin-left 2.493333rem /* 187/75 */
+                margin-bottom .173333rem /* 13/75 */
+                margin-right .533333rem /* 40/75 */
+                &>i
+                    icon_bg('../../images/footPrint/noanonymous.png',.4rem /* 30/75 */)
+                    margin-right .266667rem /* 20/75 */
+            &>span.active>i
+                icon_bg('../../images/footPrint/anonymous.png',.4rem /* 30/75 */)
+            &>button
+                icon_bg('../../images/footPrint/send_button.png',1.92rem /* 144/75 */,.8rem /* 60/75 */)
+                border 0
+                outline none
+    .time
+        color #B2B2B2
+        font-size .32rem /* 24/75 */
+        margin .52rem /* 39/75 */0 .266667rem /* 20/75 */ .866667rem /* 65/75 */
+    .feedback_item
+        background #ffffff
+        padding .533333rem /* 40/75 */
+        width 8.293333rem /* 622/75 */
+        margin .266667rem /* 20/75 */ auto .52rem /* 39/75 */ 
+        text-align center
+        .user_message,.sys_message
+            padding-bottom .533333rem /* 40/75 */
+            display flex
+            flex-direction column
+            align-items flex-end
+            .message_item
+                display flex
+                justify-content flex-end
+                .message_box
+                    flex 1
+                    position relative
+                    margin-right .32rem /* 24/75 */
+                    margin-bottom .64rem /* 48/75 */
+                    margin-top .306667rem /* 23/75 */
+                    &>p
+                        text-align left
+                        background #FFE434  
+                        color #333333   
+                        padding .36rem /* 27/75 */ .32rem /* 24/75 */
+                        border-radius .133333rem /* 10/75 */
+                        font-size .4rem /* 30/75 */
+                    &>i
+                        icon_bg('../../images/footPrint/right_arrow.png',.12rem /* 9/75 */,.226667rem /* 17/75 */)
+                        position absolute
+                        right -.12rem /* 9/75 */
+                        top .293333rem /* 22/75 */
+                .headPic
+                    width 1.12rem /* 84/75 */
+                    height 1.12rem /* 84/75 */
+                    border-radius 50%
+                &:last-child
+                    .message_box
+                        margin-bottom 0
+        .sys_message
+            align-items flex-start
+            .message_item
+                .message_box
+                    margin-left .32rem /* 24/75 */
+                    i
+                        icon_bg('../../images/footPrint/left_arrow.png',.12rem /* 9/75 */,.226667rem /* 17/75 */)
+                        left -.12rem /* 9/75 */
+                

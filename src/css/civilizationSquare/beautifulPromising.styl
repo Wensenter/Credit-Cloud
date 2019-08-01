@@ -23,14 +23,12 @@
             z-index 10
     .promising_item
         width 9.52rem /* 714/75 */
-        height 6.12rem /* 459/75 */
         box-sizing border-box
         margin .413333rem /* 31/75 */ auto .346667rem /* 26/75 */
-        padding .44rem /* 33/75 */.573333rem /* 43/75 */0
+        padding .44rem /* 33/75 */.573333rem /* 43/75 */ .506667rem /* 38/75 */
         background #ffffff
         border-radius .266667rem /* 20/75 */
         .ctx
-            height 4.733333rem /* 355/75 */
             display flex
             justify-content space-between
             align-items center
@@ -58,6 +56,10 @@
                         margin-left .106667rem /* 8/75 */
                         font-size .373333rem /* 28/75 */
                         color #B2B2B2
+                        width 2.666667rem /* 200/75 */
+                        white-space nowrap
+                        text-overflow ellipsis
+                        overflow hidden
             &>img
                 width 3.146667rem /* 236/75 */
                 height 2.466667rem /* 185/75 */
@@ -80,6 +82,9 @@
                 background-size 100% 100%
             .expired
                 background url('../../images/civilizationSquare/expired_icon.png')
+                background-size 100% 100%
+            .signUped
+                background url('../../images/civilizationSquare/signUped_icon.png')
                 background-size 100% 100%
     .publish_active
         position fixed

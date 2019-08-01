@@ -2,10 +2,12 @@
 @import '../stylus/index.styl'
 @import './public.styl'
 .content
+    overflow hidden
     .children_tab
         position relative
         &>input
-            color #000000
+            font-size .266667rem /* 20/75 */
+            color #333333
             position absolute 
             right .533333rem /* 40/75 */
             height .666667rem /* 50/75 */
@@ -23,7 +25,7 @@
         width 9.52rem /* 714/75 */
         height 6.12rem /* 459/75 */
         box-sizing border-box
-        margin 0 auto .346667rem /* 26/75 */
+        margin .413333rem /* 31/75 */ auto .346667rem /* 26/75 */
         padding .44rem /* 33/75 */.573333rem /* 43/75 */0
         background #ffffff
         border-radius .266667rem /* 20/75 */
@@ -59,19 +61,26 @@
             &>img
                 width 3.146667rem /* 236/75 */
                 height 2.466667rem /* 185/75 */
-        &>button
-            display block
-            width 1.866667rem /* 140/75 */
-            height .693333rem /* 52/75 */
-            margin 0 auto
-            outline none
-            border 0
-        .signUp
-            background url('../../images/civilizationSquare/singUp_icon.png')
-            background-size 100% 100%
-        .alreadyExpired
-            background url('../../images/civilizationSquare/alreadyExpired_icon.png')
-            background-size 100% 100%
+        .buttonList
+            display flex
+            justify-content center
+            align-items center
+            &>button
+                display block
+                width 1.866667rem /* 140/75 */
+                height .693333rem /* 52/75 */
+                outline none
+                border 0
+                margin-left .56rem /* 42/75 */
+            .signUp
+                background url('../../images/civilizationSquare/singUp_icon.png')
+                background-size 100% 100%
+            .alreadyExpired
+                background url('../../images/civilizationSquare/alreadyExpired_icon.png')
+                background-size 100% 100%
+            .expired
+                background url('../../images/civilizationSquare/expired_icon.png')
+                background-size 100% 100%
     .publish_active
         position fixed
         bottom 1.8rem /* 135/75 */

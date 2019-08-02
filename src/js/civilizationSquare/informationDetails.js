@@ -1,23 +1,34 @@
 window.onload = function(){
-    //评论栏切换
-    $('.publish_box .title').focus(function(){
+    
+    //input聚焦
+    $('.publish_box .title').focus(inputFocus)
+
+    //input失焦
+    // $('.publish_box .title').blur(inputBlur)
+
+    //发布按钮点击
+    $('.publish_box .publish_button').click(inputBlur)
+
+    function inputFocus(){
         $('.publish_box .opr').css({
-            'display':'none'
+            'display': 'none'
         });
         $('.publish_box .publish_button').css({
-            'display':'block'
+            'display': 'block'
         })
         $('.publish_box').css({
-            'background':'#F7F7F7',
+            'background': '#F7F7F7',
         })
         $(this).css({
-            'background':'#ffffff',
-            'width':'6.866667rem',
-            'height':'.8rem',
-            'borderRadius':'04rem'
+            'background': '#ffffff',
+            'width': '6.866667rem',
+            'height': '.8rem',
+            'borderRadius': '04rem'
         })
-    })
-    $('.publish_box .title').blur(function(){
+        $(this).attr('placeholder', '好观点将优先展示')
+    }
+
+    function inputBlur(){
         $('.publish_box .opr').css({
             'display': 'flex'
         });
@@ -32,8 +43,9 @@ window.onload = function(){
             'width': 'auto',
             'height': 'auto',
             'borderRadius': '0'
-        }) 
-    })
+        })
+        $(this).attr('placeholder', '欢迎发表你的观点')
+    }
 
     //收藏
     $('.opr .star').click(function(){

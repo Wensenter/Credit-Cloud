@@ -1,0 +1,40 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+.content
+    min-height 100vh
+    background #F7F7F7
+    border-top .013333rem /* 1/75 */ solid transparent
+    &>ul
+        background #ffffff
+        width 8.213333rem /* 616/75 */
+        padding 0 .586667rem /* 44/75 */
+        margin .333333rem /* 25/75 */auto 0
+        &>li
+            height 1.466667rem /* 110/75 */
+            width 8.293333rem /* 622/75 */
+            display flex
+            justify-content space-between
+            align-items center
+            border-bottom .013333rem /* 1/75 */solid #F3F6F7
+            font-size .4rem /* 30/75 */
+            .title
+                display flex
+                align-items center
+                color #333333
+            .text
+                color #B2B2B2
+                display flex
+                align-items center
+                i
+                    icon_bg('../../images/footPrint/right_arrow_c_icon.png',.4rem /* 30/75 */)        
+                    margin-left .133333rem /* 10/75 */
+            &:last-child
+                border 0
+        .active
+            .title>i
+                    icon_bg('../../images/footPrint/like_icon.png',.546667rem /* 41/75 */,.493333rem /* 37/75 */)
+                    margin-right .293333rem /* 22/75 */
+        .information
+            .title>i
+                icon_bg('../../images/footPrint/star_b_icon.png',.546667rem /* 41/75 */,.493333rem /* 37/75 */)
+                margin-right .293333rem /* 22/75 */

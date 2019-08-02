@@ -1,0 +1,64 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+.content
+    min-height 100vh
+    background #F7F7F7
+    padding-top .333333rem /* 25/75 */
+    &>ul
+        width 8.293333rem /* 622/75 */
+        margin 0 auto
+        padding .533333rem /* 40/75 */
+        padding-bottom 0
+        background #ffffff
+        .evaluation_item
+            padding-bottom .533333rem /* 40/75 */
+            border-bottom 1px solid #F3F6F7
+            &:last-child
+                // border 0
+            .userinfo
+                display flex
+                .headPic
+                    width 1.12rem /* 84/75 */
+                    height 1.12rem /* 84/75 */
+                    border-radius 50%
+                    margin-right .28rem /* 21/75 */
+                &>div
+                    .name
+                        color #3E3E3E
+                        font-size .4rem /* 30/75 */
+                        font-weight bold
+                    .time
+                        color #B2B2B2
+                        font-size .32rem /* 24/75 */
+            .score
+                display flex
+                margin-top .346667rem /* 26/75 */
+                color #3E3E3E
+                font-size .4rem /* 30/75 */
+                font-weight 500
+                span 
+                    display flex
+                    align-items center
+                    margin-left .266667rem /* 20/75 */
+                    i
+                        margin-right .106667rem /* 8/75 */
+                    .star
+                        icon_bg('../../images/footPrint/star_icon.png',.333333rem /* 25/75 */)
+                    .unstar
+                        icon_bg('../../images/footPrint/unstar_icon.png',.333333rem /* 25/75 */)
+            .evaluation
+                margin-top .533333rem /* 40/75 */
+                width 8.293333rem /* 622/75 */
+                color #333333
+                font-size .4rem /* 30/75 */
+                .imgList
+                    width 8.293333rem /* 622/75 */
+                    display flex
+                    justify-content space-between
+                    flex-wrap wrap
+                    margin-top .333333rem /* 25/75 */
+                    img
+                        width 2rem /* 150/75 */
+                        height 2rem /* 150/75 */
+                        border-radius .133333rem /* 10/75 */
+                        margin-bottom .133333rem /* 10/75 */

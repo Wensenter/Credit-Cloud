@@ -1,0 +1,43 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+.content
+    min-height 100vh
+    background #F7F7F7
+    .civilizations
+        width 9.293333rem /* 697/75 */
+        margin .4rem /* 30/75 */ auto 0
+        border-radius .266667rem /* 20/75 */
+        background #ffffff
+        padding 0 .48rem /* 36/75 */ 0 .52rem /* 39/75 */
+        box-sizing border-box
+        &>li
+            width 8.293333rem /* 622/75 */
+            border-1px(#F3F6F7)
+            display flex
+            padding .533333rem /* 40/75 */ 0
+            &>div
+                flex 1
+                &>.title
+                    color #231815
+                    font-size .4rem /* 30/75 */
+                    margin-bottom .293333rem /* 22/75 */
+                    &>i
+                        vertical-align middle
+                        icon_bg('../../images/civilizationSquare/answer_icon.png',.8rem /* 60/75 */,.48rem /* 36/75 */)
+                        display inline-block
+                &>.time
+                    color #B2B2B2
+                    font-size .32rem /* 24/75 */
+            &>img
+                width 2.8rem /* 210/75 */
+                height 1.6rem /* 120/75 */
+                border-radius .133333rem /* 10/75 */
+        .allLoad
+            height 1.413333rem /* 106/75 */
+            padding 0
+            display flex
+            justify-content center
+            align-items center
+            color #B2B2B2
+            font-size .346667rem /* 26/75 */
+            

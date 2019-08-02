@@ -1,0 +1,35 @@
+@import '../stylus/index.styl'
+i
+  display: inline-block
+.wrapper
+  min-height: 100vh
+  overflow: hidden
+  background-color: #F7F7F7
+  .points-wrapper
+    margin: 25px 25px 0 25px
+    padding: 0 40px
+    min-height: 100px
+    background: rgba(255, 255, 255, 1)
+    box-shadow: 0px 18px 24px 0px rgba(241, 241, 241, 0.44)
+    border-radius: 20px
+    .point-item
+      display: flex
+      justify-content: space-between
+      padding: 23px 0
+      border-bottom: 0.5px solid rgba(237, 237, 237, 1)
+      &:last-child
+        border-bottom: none
+      .intro
+        &-text
+          font-size: 28px
+          font-weight: 700
+          color: rgba(51, 51, 51, 1)
+        &-time
+          font-size: 24px
+          font-weight: 700
+          color: rgba(179, 179, 179, 1)
+      .points-record
+        align-self: center
+        font-size: 40px
+        font-weight: 400
+        color: rgba(248, 108, 79, 1)

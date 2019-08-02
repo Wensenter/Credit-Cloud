@@ -29,25 +29,115 @@
           <div class="check-btn" data-check="1">南岭社区</div>
         </div>
         <div class="check-items check-items-0">
-          <div class="img-wrapper">
-            <img src="https://via.placeholder.com/100" alt="" />
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4317</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
           </div>
-          <div class="item-wrapper">
-            <div class="title">清风纸巾</div>
-            <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4317</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
           </div>
-          <div class="check-item">
-            <div class="check-points"><span class="red">4317</span>积分</div>
-            <div class="btn-check"></div>
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4317</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
           </div>
         </div>
-        <div class="check-items check-items-1"></div>
+        <div class="check-items check-items-1 hide">
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4317</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
+          </div>
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4317</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
+          </div>
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4397</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
+          </div>
+          <div class="check-content">
+            <div class="img-wrapper">
+              <img src="https://via.placeholder.com/100" alt="" />
+            </div>
+            <div class="item-wrapper">
+              <div class="title">清风纸巾</div>
+              <div class="intro">终极大奖，全金属面板，双摄像头更高清</div>
+            </div>
+            <div class="check-item">
+              <div class="check-points"><span class="red">4397</span>积分</div>
+              <div class="btn-check"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="../../common/jquery.min.js"></script>
     <script>
       $('.check-btn').on('click', function() {
-        console.log($(this).attr('data-check'));
+        var checkId = $(this).attr('data-check');
+        var checkClass = '.check-items-' + checkId;
+        if ($(this).hasClass('checked')) {
+          return;
+        } else {
+          $('.check-btn').removeClass('checked');
+          $(this).addClass('checked');
+          $('.check-items').addClass('hide');
+          $(checkClass).removeClass('hide');
+        }
       });
     </script>
   </body>

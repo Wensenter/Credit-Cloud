@@ -1,8 +1,20 @@
 @import '../stylus/index.styl'
 @import '../tools.styl'
 @import '../common_yl.styl'
-.wrapper
-  width 100vw
-  height 100vh
-  box-sizing border-box
-  padding: 24px
+  .reg_body
+    border-radius: 20px 20px 0 0  !important
+.bottom_box
+  width 704px
+  flex-center()
+  border-radius: 0 0 20px 20px 
+  .btn
+    width 220px
+    height 82px
+    margin 50px 30px
+    cursor pointer
+    &.reset
+        bg-img('../../images/personalCenter/reset_icon.png')
+        background-size cover
+    &.submit
+        bg-img('../../images/personalCenter/submit_icon.png')
+        background-size cover

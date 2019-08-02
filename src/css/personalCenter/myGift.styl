@@ -1,0 +1,122 @@
+@import '../stylus/index.styl'
+@import '../tools.styl'
+.wrapper
+  width 100vw
+  height 100vh
+  overflow hidden
+  .items
+    padding 24px
+    height 96%
+    overflow auto
+    .item
+      padding 45px 40px
+      flex-center()
+      justify-content flex-start
+      border-radius 10px
+      margin-bottom 20px
+      .left
+        width 150px
+        height @width
+        flex-center()
+        border 1px solid rgba(237, 237, 237, 1)
+        border-radius 10px
+        img
+          max-width 90%
+          max-height 90%
+      .center
+        flex 1
+        padding 0 20px
+        h3
+          font-size 30px
+          font-family PingFang-SC-Bold
+          font-weight bold
+          color rgba(51, 51, 51, 1)
+        p, span
+          font-size 24px
+          font-family PingFang-SC-Medium
+          font-weight 500
+          color rgba(179, 179, 179, 1)
+          line-height 36px
+        p
+          padding-top 10px
+      .right
+        width 140px
+        height 52px
+        background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)
+        border-radius 26px
+        flex-center()
+        font-size 24px
+        font-family PingFang-SC-Bold
+        font-weight bold
+        color rgba(255, 255, 255, 1)
+        letter-spacing 4px
+        &.active
+          background #B5B5B5
+// 蒙层
+.mask_box
+  position relative
+  width 100vw
+  height 100vh
+  top -100vh
+  left 0
+  background rgba(0, 0, 0, 0.5)
+  // display none
+  .rule_box
+    absolute-center()
+    box-sizing border-box
+    width 540px
+    height 416px
+    background rgba(255, 255, 255, 1)
+    border-radius 20px
+    padding 40px 43px
+    flex-center()
+    flex-direction column
+    justify-content flex-start
+    h1
+      font-size 40px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(35, 35, 35, 1)
+      line-height 20px
+      text-align center
+      margin-top 30px
+    .text
+      width 454px
+      height 106px
+      font-size 28px
+      font-family PingFang-SC-Medium
+      font-weight 500
+      color rgba(159, 159, 159, 1)
+      line-height 40px
+      flex-center()
+      flex-direction column
+      text-align center
+      margin-top 40px
+    .know_btn
+      width 376px
+      height 80px
+      background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)
+      border-radius 40px
+      font-size 30px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(255, 255, 255, 1)
+      line-height 20px
+      flex-center()
+      margin-top 40px
+    &.exChange
+      .bottom_btn
+        flex-center()
+        justify-content space-between
+        margin-top 40px
+        width 100%
+        .btn
+          width 200px
+          height 80px
+          &.canel
+            bg-img('../../images/personalCenter/canel_icon.png')
+            background-size cover
+          &.confirm
+            bg-img('../../images/personalCenter/confir_icon.png')
+            background-size cover
+

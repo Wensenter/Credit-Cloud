@@ -1,0 +1,123 @@
+@import '../stylus/index.styl'
+i
+  display: inline-block
+.wrapper
+  min-height: 100vh
+  padding-bottom: 40px
+  background-color: #F4F5F5
+  background-image: url('../../images/myPoints/banner.png')
+  background-repeat: no-repeat
+  background-size: 100%
+  overflow: hidden
+// 分数
+.points
+  position: relative
+  margin: 75px 65px 0 65px
+  &-title
+    font-size: 30px
+    font-weight: bold
+    color: rgba(255, 255, 255, 1)
+  &-value
+    font-size: 88px
+    font-weight: 600
+    color: rgba(255, 255, 255, 1)
+  &-check
+    absolute: top 55px right
+    full-img('../../images/myPoints/btn_gocheck.png')
+.calender-wrapper
+  margin: 65px 25px 0 25px
+  padding: 40px 0 20px 0
+  background: rgba(255, 255, 255, 1)
+  box-shadow: 0px 18px 24px 0px rgba(241, 241, 241, 0.44)
+  border-radius: 20px
+  .title-wrapper
+    position: relative
+    padding: 0 60px
+    .title
+      font-size: 30px
+      font-weight: bold
+      color: rgba(51, 51, 51, 1)
+    .intro
+      margin-top: 5px
+      font-size: 24px
+      font-weight: 700
+      color: rgba(179, 179, 179, 1)
+    .detail-points
+      absolute: top 10px right 60px
+      font-size: 24px
+      font-weight: 700
+      color: rgba(179, 179, 179, 1)
+      .icon-detail
+        vertical-align: -0.1em
+        margin-left: 5px
+        full-img('../../images/myPoints/icon_detail.png')
+  .calender-content
+    .calender-title
+      margin: 45px 0 25px 0
+      padding: 0 60px
+      display: flex
+      justify-content: space-between
+      font-size: 24px
+      font-weight: 700
+      color: rgba(51, 51, 51, 1)
+    .calender-items
+      padding: 0 32px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .calender-item
+        width: 13.33%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin-bottom: 20px
+        .item
+          width: 62px
+          height: 62px
+          bg-img('../../images/myPoints/after_point.png')
+          &.lottery
+            bg-img('../../images/myPoints/lottery_today.png')
+          &.lottery-after
+            bg-img('../../images/myPoints/lottery_tomorrow.png')
+          &.sign-today
+            bg-img('../../images/myPoints/current_point.png')
+          &.has-sign
+            bg-img('../../images/myPoints/has_sign.png')
+        .date
+          margin-top: 15px
+          font-size: 24px
+          font-weight: 700
+          color: rgba(51, 51, 51, 1)
+          &.today
+            font-size: 24px
+            font-weight: 700
+            color: rgba(255, 143, 71, 1)
+    .calender-date
+      font-size: 24px
+      font-weight: 700
+      color: rgba(179, 179, 179, 1)
+      text-align: center
+      .icon-prev
+        position: relative
+        margin-right: 30px
+        vertical-align: -0.1em
+        transform: rotate(180deg)
+        full-img('../../images/myPoints/icon_detail.png')
+        click-area(15px)
+      .icon-next
+        position: relative
+        margin-left: 30px
+        vertical-align: -0.1em
+        full-img('../../images/myPoints/icon_detail.png')
+        click-area(15px)
+// rules
+.rules
+  margin: 40px 25px 0 25px
+  padding: 40px 0 20px 0
+  background: rgba(255, 255, 255, 1)
+  box-shadow: 0px 18px 24px 0px rgba(241, 241, 241, 0.44)
+  border-radius: 20px
+  text-align: center
+  img
+    width: 620px

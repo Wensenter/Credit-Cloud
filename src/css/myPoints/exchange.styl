@@ -7,6 +7,7 @@
   background-repeat: no-repeat
   background-size: 100%
   overflow: hidden
+  font-size: 0
   .points-wrapper
     margin: 88px 275px 0 275px
     text-align: center
@@ -33,6 +34,9 @@
         align-items: center
         width: 50%
         height: 90px
+        font-size: 30px
+        font-weight: bold
+        color: rgba(51, 51, 51, 1)
         &:first-child
           border-radius: 20px 0px 0px 0px
         &:last-child
@@ -50,38 +54,44 @@
         font-size: 24px
         font-weight: 500
         color: rgba(179, 179, 179, 1)
-        margin-top: 20px
+        margin-top: 10px
         word-break: break-all
+        multi-line(2)
     .check-items
-      display: flex
-      padding: 40px
-      .img-wrapper
-        position: relative
-        flex: 0 0 150px
-        margin-right: 20px
-        width: 150px
-        height: 150px
-        background: rgba(255, 255, 255, 1)
-        border: 1px solid rgba(237, 237, 237, 1)
-        border-radius: 10px
-        img
-          width: 106px
-          height: 112px
+      padding: 0 40px
+      .check-content
+        padding: 40px 0
+        display: flex
+        border-bottom: 0.5px solid rgba(237, 237, 237, 1)
+        &:last-child
+          border-bottom: none
+        .img-wrapper
+          position: relative
+          flex: 0 0 auto
+          margin-right: 20px
+          width: 150px
+          height: 150px
+          // background: rgba(255, 255, 255, 1)
+          border: 2px solid rgba(0, 0, 0, 0.05)
           border-radius: 10px
-          absolute-center()
-      .check-item
-        margin-top: 25px
-        flex: 0 0 140px
-        text-align: center
-        .check-points
-          font-size: 22px
-          font-weight: 600
-          color: #333333
+          img
+            width: 106px
+            height: 112px
+            border-radius: 10px
+            absolute-center()
+        .check-item
+          margin-top: 25px
+          flex: 0 0 140px
           text-align: center
-          .red
-            font-size: 30px
-            font-weight: 700
-            color: #F86C4F
-        .btn-check
-          margin-top: 15px
-          full-img('../../images/myPoints/exchange.png')
+          .check-points
+            font-size: 22px
+            font-weight: 600
+            color: #333333
+            text-align: center
+            .red
+              font-size: 30px
+              font-weight: 700
+              color: #F86C4F
+          .btn-check
+            margin-top: 10px
+            full-img('../../images/myPoints/exchange.png')

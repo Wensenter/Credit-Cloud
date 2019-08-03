@@ -1,0 +1,69 @@
+@import '../tools.styl'
+@import '../stylus/index.styl'
+.content
+    min-height 100vh
+    border-top .013333rem /* 1/75 */solid transparent
+    background #F7F7F7
+    .evaluate_sum
+        margin-top .506667rem /* 38/75 */
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+        .title
+            display flex
+            align-items center
+            color #000000
+            font-size .4rem /* 30/75 */
+            font-weight bold
+            i
+                margin-right .253333rem /* 19/75 */
+                icon_bg('../../images/footPrint/anonymous.png',.4rem /* 30/75 */)
+        .text
+            margin-top .266667rem /* 20/75 */
+            color #333333
+            font-size .266667rem /* 20/75 */
+    .evaluate_info
+        width 8.293333rem /* 622/75 */
+        display flex
+        flex-direction column
+        justify-content flex-start
+        align-items center
+        background #ffffff
+        padding .533333rem /* 40/75 */
+        margin .533333rem /* 40/75 */auto 0
+        border-radius .266667rem /* 20/75 */
+        .title
+            color #B3B3B3
+            display flex
+            align-items center
+            &:after,&:before
+                content ' '
+                width 3.2rem /* 240/75 */
+                height .013333rem /* 1/75 */
+                background #F3F6F7
+            &:after
+                margin-left .133333rem /* 10/75 */
+            &:before
+                margin-right .133333rem /* 10/75 */
+        .stars 
+            display flex
+            margin-top .266667rem /* 20/75 */
+            i
+                margin-right .16rem /* 12/75 */
+                &:last-child
+                    margin 0
+            .star
+                icon_bg('../../images/footPrint/star_icon.png',.4rem /* 30/75 */)
+            .unstar
+                icon_bg('../../images/footPrint/unstar_icon.png',.4rem /* 30/75 */)
+        .text 
+            margin-top .533333rem /* 40/75 */
+            color #333333
+            font-size .4rem /* 30/75 */   
+            font-weight 500  
+    button
+        border 0
+        outline none
+        margin 8.84rem /* 663/75 */ auto 0
+        icon_bg('../../images/footPrint/submit_icon.png',6.24rem /* 468/75 */,1.093333rem /* 82/75 */)  

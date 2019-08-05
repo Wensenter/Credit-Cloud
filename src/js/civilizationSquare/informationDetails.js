@@ -63,4 +63,11 @@ window.onload = function(){
         $('.video_box video').attr('controls',true);
         $(this).fadeOut();
     })
+
+    //点击分享
+    $('.detail .share,.opr .forward').click(function(){        
+        $('.bg').css({
+            'display':'block'
+        })
+    })
 }

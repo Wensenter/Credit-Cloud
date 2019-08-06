@@ -92,14 +92,17 @@
           width 2.593333rem /* 202/75 */
           height @width
     .addr
+      align-items flex-start !important
+      margin-top 20px
       .icon_addr
         width .4rem /* 30/75 */
         height @width 
         bg-img('../../images/civilizationCircle/icon_addr.png')
         margin .133333rem /* 10/75 */
         margin-left 0
-        span 
-          font-size $fs-s
+      span 
+        font-size $fs-s
+        flex 1 !important;
   .action_bar
     margin-top .366667rem /* 20/75 */
     padding 0 .466667rem /* 20/75 */

@@ -196,13 +196,10 @@
     $(function () {
     //获取浏览器的userAgent,并转化为小写
     var ua = navigator.userAgent.toLowerCase();
-    // alert(ua)
-    //判断是否是苹果手机，是则是true
     var isAndr4 = ua.indexOf('android 4') != -1
     if (isAndr4) {
-      alert(1)
       $("input:file").attr("capture","camera");
     };
-  })
+    })
   </script>
 </html>

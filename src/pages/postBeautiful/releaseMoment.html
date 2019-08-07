@@ -37,7 +37,7 @@
               <!-- 上传 -->
               <div class="img_box upImg_icon_box">
                 <img src="../../images/postBeautiful/upImgIcon.png" class="add_img">
-                <input type="file" name="file" id="upImg" class="add_input">
+                <input type="file" name="file" id="upImg" accept="image/*"  multiple  class="add_input">
               </div>
             </div>
             <!-- 标签 -->
@@ -191,4 +191,18 @@
   <!-- <script src="../js/isWexin.js"></script> -->
   <script src="../../common/jquery.min.js"></script>
   <script src="../../js/postBeautiful/releaseMoment.js"></script>
+  <script>
+    // 判断安卓4，如果是安卓4就加上capture属性.
+    $(function () {
+    //获取浏览器的userAgent,并转化为小写
+    var ua = navigator.userAgent.toLowerCase();
+    // alert(ua)
+    //判断是否是苹果手机，是则是true
+    var isAndr4 = ua.indexOf('android 4') != -1
+    if (isAndr4) {
+      alert(1)
+      $("input:file").attr("capture","camera");
+    };
+  })
+  </script>
 </html>

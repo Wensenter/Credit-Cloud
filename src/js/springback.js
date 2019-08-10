@@ -8,17 +8,23 @@
         if (resultArr && resultArr.length > 1) {
             var iosVersion = resultArr[1] * 1;
             if (iosVersion >= 12) {
-                window.scrollTo(0, 0)
+                let scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0
+                window.scrollTo(0, Math.max(scrollHeight - 1, 0))
             }
         }
     }
 
     var inputElements = document.getElementsByTagName('input');
     var selectElements = document.getElementsByTagName('select');
+    var textareaElements = document.getElementsByTagName('textarea');
     var i,
         len;
     for (i = 0, len = inputElements.length; i < len; i++) {
         inputElements[i].addEventListener('blur', checkVersion, false)
+    }
+
+    for(i = 0, len = textareaElements.length; i < len; i++){
+        textareaElements[i].addEventListener('blur',checkVersion,false)
     }
 
     for (i = 0, len = selectElements.length; i < len; i++) {

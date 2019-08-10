@@ -3,8 +3,14 @@ window.onload = function () {
         autoplay: false,
         loop: true
     });    
-    var d = getFormat()
-    $("#bt").val(d);
+
+    $('#startTime').change(function(){
+        $('.startTimeValue').val($(this).val().replace('T',' '))
+    })
+
+    $('#endTime').change(function () {
+        $('.endTimeValue').val($(this).val().replace('T', ' '))
+    })
 
     $('.content button').click(function(){
         $('.bg').show();
@@ -12,6 +18,11 @@ window.onload = function () {
 
     $('.bg').on('touchmove',function(e){
         e.preventDefault();
+    })
+
+    //点击图片上传
+    $('.loadBox_icon').click(function () {
+        $(this).next().click();
     })
 };
 

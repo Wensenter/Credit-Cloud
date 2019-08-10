@@ -18,7 +18,7 @@ body,html
         margin 0 auto 
         padding 0 .48rem /* 36/75 */0 .52rem /* 39/75 */
         &>li
-            height 1.56rem /* 117/75 */
+            min-height 1.56rem /* 117/75 */
             border-bottom 1px solid #F3F6F7
             display flex
             justify-content flex-start
@@ -26,9 +26,15 @@ body,html
             font-weight 500
             font-size .4rem /* 30/75 */
             .title
+                flex 0 0 1.866667rem /* 140/75 */
                 color #333333
                 margin-right .133333rem /* 10/75 */
             .text
-                color #B2B2B2
+                color #000000
+            &:nth-child(1),&:nth-child(2)
+                padding .133333rem /* 10/75 */ 0
+                &>span:last-child
+                    max-height 1.866667rem /* 140/75 */
+                    overflow-y scroll
             &:last-child
                 display block

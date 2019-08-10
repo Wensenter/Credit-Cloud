@@ -2,7 +2,7 @@
 @import '../stylus/index.styl'
 body
     background #F7F7F7
-    height 100%
+    min-height 100vh
     border 1px solid transparent
     .detail
         background #ffffff
@@ -13,6 +13,8 @@ body
         .content
             border-bottom 1px solid #F3F6F7
             padding-bottom .573333rem /* 43/75 */
+            img
+                max-width 100%
             .title
                 color #010101
                 font-size .4rem /* 30/75 */
@@ -23,6 +25,7 @@ body
                 padding .28rem /* 21/75 */0 .36rem /* 27/75 */
             .ctx
                 color #333333
+                text-align justify
                 font-size .4rem /* 30/75 */
                 font-weight 500
                 &>i
@@ -72,7 +75,7 @@ body
         margin-top .333333rem /* 25/75 */
         margin-left .493333rem /* 37/75 */
     .viewpoint_ctx
-        margin .266667rem /* 20/75 */ auto 0
+        margin .266667rem /* 20/75 */ auto 1.173333rem /* 88/75 */
         width 9.386667rem /* 704/75 */
         &>li
             background #ffffff
@@ -94,6 +97,7 @@ body
                     .ctx
                         color #333333
                         font-size .4rem /* 30/75 */
+                        text-align justify
                     .time
                         color #B2B2B2
                         font-size .32rem /* 24/75 */
@@ -135,6 +139,7 @@ body
         padding 0 .866667rem /* 65/75 */0 .84rem /* 63/75 */
         .title
             border 0
+            padding-left .2rem /* 15/75 */
             &::-webkit-input-placeholder
                 color #B2B2B2
                 font-size .4rem /* 30/75 */
@@ -163,13 +168,13 @@ body
             .forward
                 icon_bg('../../images/civilizationSquare/forward_icon.png',.6rem /* 45/75 */)  
         .publish_button
+            icon_bg('../../images/civilizationSquare/send.png',1.92rem /* 144/75 */,.8rem /* 60/75 */)
             margin-left .4rem /* 30/75 */
             display none
             width 1.92rem /* 144/75 */
             height .8rem /* 60/75 */
             line-height .8rem /* 60/75 */
             border-radius .36rem /* 27/75 */   
-            background #EAEAEA
             text-align center
     .bg
         display none

@@ -49,25 +49,30 @@
             font-size .4rem /* 30/75 */
             position relative
             #startTime,#endTime
-                width .533333rem /* 40/75 */
+                width 5.333333rem /* 400/75 */
                 height .533333rem /* 40/75 */
                 position absolute
                 right -0.3125rem
                 bottom .52rem /* 39/75 */
-                color #ffffff
-            &>input,&>textarea
+                color transparent
+            input,textarea
                 border 0
                 outline none 
-                color #D7D7D7
+                color #333333
                 background transparent
                 flex 1
                 &::-webkit-input-placeholder
                     color #D7D7D7
-            &>textarea
+            textarea
                 height 2.32rem /* 174/75 */
             .title
                 color #333333
                 margin-right .133333rem /* 10/75 */
+            .timevalue
+                display flex
+
+                .startTimeValue,.endTimeValue
+                    flex 0 0 4rem /* 300/75 */
             &>label>i
                 position absolute
                 right .4rem /* 30/75 */

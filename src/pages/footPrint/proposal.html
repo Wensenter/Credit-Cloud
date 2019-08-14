@@ -18,7 +18,7 @@
                     <img class="add_icon" src="../../images/footPrint/add_icon.png">
                     <span>添加照片</span>
                 </div>
-                <input type="file">
+                <input type="file" multiple>
             </div>
             <span class="anonymous"><i></i>匿名</span>
             <button type="button"></button>
@@ -79,5 +79,18 @@
     </div>
     <script src="../../common/jquery.min.js"></script>
     <script src="../../js/footPrint/proposal.js"></script>
+    <script>
+        // 判断安卓4，如果是安卓4就加上capture属性.
+        $(function () {
+            //获取浏览器的userAgent,并转化为小写
+            var ua = navigator.userAgent.toLowerCase();
+            // alert(ua)
+            //判断是否是苹果手机，是则是true
+            var isAndr4 = ua.indexOf('android 4') != -1
+            if (isAndr4) {
+                $("input:file").attr("capture", "camera");
+            };
+        })
+    </script>
 </body>
 </html>

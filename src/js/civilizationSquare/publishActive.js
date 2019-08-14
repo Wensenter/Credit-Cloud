@@ -5,11 +5,28 @@ window.onload = function () {
     });    
 
     $('#startTime').change(function(){
-        $('.startTimeValue').val($(this).val().replace('T',' '))
+        var valArr = $(this).val().replace('T', ' ').split(':');
+        var len = valArr.length;
+        if(len >= 3){
+            valArr.pop(len-1);
+            var valStr = valArr.join(':');
+            $('.startTimeValue').val(valStr)
+        }else{
+            $('.startTimeValue').val($(this).val().replace('T', ' '))
+        }
+        
     })
 
     $('#endTime').change(function () {
-        $('.endTimeValue').val($(this).val().replace('T', ' '))
+        var valArr = $(this).val().replace('T', ' ').split(':');
+        var len = valArr.length;
+        if (len >= 3) {
+            valArr.pop(len - 1);
+            var valStr = valArr.join(':');
+            $('.endTimeValue').val(valStr)
+        } else {
+            $('.endTimeValue').val($(this).val().replace('T', ' '))
+        }
     })
 
     $('.content button').click(function(){

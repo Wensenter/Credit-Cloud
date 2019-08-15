@@ -39,7 +39,10 @@ class Calender {
       dateFns.addMonths(date, -1)
     );
     // 生成周几
-    const begIndex = dateFns.getDay(days[0].date);
+    let begIndex = dateFns.getDay(days[0].date);
+    if (begIndex === 0) {
+      begIndex = 7;
+    }
     for (let i = begIndex; i > 1; i--) {
       days.unshift({
         date: previousMonthCursor,
@@ -75,27 +78,28 @@ class Calender {
       date = `<div class="date today" data-date="${day.date}">今日</div>`;
       item = '<div class="item sign-today" onclick="handleSign()"></div>';
     }
-    // 是否中奖
-    if (day.isLottery) {
-      item = '<div class="item lottery" onclick="handleLottery()"></div>';
-    }
-    // 是否即将抽奖
-    if (day.lotteryafter) {
-      item = '<div class="item lottery-after"></div>';
-    }
     // 是否签到
     if (day.hasSign) {
       item = '<div class="item has-sign"></div>';
+    }
+    // 是否即将抽奖和抽过奖
+    if (day.lotteryafter && !day.isLottery) {
+      item = '<div class="item lottery-after"></div>';
+    }
+    // 是否可抽奖
+    if (day.lotteryafter && day.isLottery) {
+      item = '<div class="item lottery" onclick="handleLottery()"></div>';
     }
     // 时候今天签到后，可抽奖
     if (day.lotteryafter && day.isToday) {
       item =
         '<div class="item sign-today" onclick="handleLotteryToday()"></div>';
     }
-
+    // 是否其他月份
     if (day.isOtherMonth) {
       return `<li class="calender-item" style="visibility: hidden"></li>`;
     }
+
     return `<li class="calender-item">${item}${date}</li>`;
   }
 

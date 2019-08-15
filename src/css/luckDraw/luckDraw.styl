@@ -1,0 +1,65 @@
+@import '../stylus/index.styl'
+// 水平居中
+transformMiddle()
+    left 50%
+    transform translateX(-50%)
+.wrapper
+    height 100vh
+    background url('../../images/luckDraw/bg.png') no-repeat
+    background-size 100% 100%
+    position relative
+    .balloon
+        width 1.173333rem /* 88/75 */
+        height 1.666667rem /* 125/75 */
+        position absolute
+        top 3rem /* 225/75 */
+        right .44rem /* 33/75 */
+    .turntable_out
+      width 9.2rem /* 690/75 */
+      height 12.28rem /* 921/75 */
+      position absolute  
+      top 3.693333rem /* 277/75 */
+      transformMiddle()
+    .dot
+        width 8.88rem /* 666/75 */
+        position absolute
+        top 3.853333rem /* 289/75 */
+        transformMiddle()
+    .turntable_in
+        width 8.173333rem /* 613/75 */
+        position absolute
+        top 4.213333rem /* 316/75 */
+        transformMiddle()
+    .pointer
+        width 2.4rem /* 180/75 */
+        height 2.986667rem /* 224/75 */
+        position absolute
+        top 6.52rem /* 489/75 */
+        transformMiddle()
+    .luckDraw_icon
+        width 1.066667rem /* 80/75 */
+        height .506667rem /* 38/75 */
+        position absolute
+        top 8.053333rem /* 604/75 */
+        transformMiddle()
+    .pop_wrapper
+        background url('../../images/luckDraw/pop_bg.png') no-repeat
+        background-size 100% 100%
+        position absolute
+        top 0 
+        left 0
+        width 100%
+        height 100%
+        display none
+        .pop_tip
+            position absolute
+            top 7.04rem /* 528/75 */
+            transformMiddle()
+        .prize
+            position absolute
+            top 8.12rem /* 609/75 */
+            transformMiddle()
+        .close
+            position absolute
+            top 14.786667rem /* 1109/75 */
+            transformMiddle()

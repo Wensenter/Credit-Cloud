@@ -13,9 +13,9 @@ window.onload = function(){
             alert('已经抽过奖了')
             return false
         }else{
-            var rand = Math.random().toFixed(2)*360;
+            var rand = Math.floor(Math.random()*360);
             $('.turntable_in').css({
-                'transform':'translateX(-50%) rotate('+(360*2+rand)+'deg)',
+                '-webkit-transform':'rotate('+(360*2+rand)+'deg)',
                 'transition':'all 3s'
             })
             setTimeout(() => {

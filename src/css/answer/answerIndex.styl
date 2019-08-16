@@ -1,0 +1,58 @@
+@import '../stylus/index.styl'
+transformMiddle()
+    position absolute
+    left 50%
+    transform translateX(-50%)
+.wrapper
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background url('../../images/answer/bg.png') no-repeat
+    background-size 100% 100%
+    .startButton,.ruleButton
+        height 1.013333rem /* 76/75 */
+        width 5.706667rem /* 428/75 */
+        background url('../../images/answer/startButton.png') no-repeat
+        background-size 100% 100%
+        outline none
+        border 0
+        transformMiddle()
+        bottom 1.733333rem /* 130/75 */
+    .ruleButton
+        background url('../../images/answer/ruleButton.png') no-repeat
+        background-size 100% 100%
+        bottom .4rem /* 30/75 */
+    .pop_1
+        display none
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background rgba(0,0,0,0.5)
+        .pop_1_bg
+            width 7.2rem /* 540/75 */
+            height 9.04rem /* 678/75 */
+            background url('../../images/answer/pop_1_bg.png') no-repeat
+            background-size 100% 100%
+            transformMiddle()
+            bottom 3.466667rem /* 260/75 */
+        .ctx
+            width 5.866667rem /* 440/75 */
+            padding 0 .666667rem /* 50/75 */
+            transformMiddle()
+            top 1.493333rem /* 112/75 */
+            font-size .373333rem /* 28/75 */
+            color #9F9F9F
+            font-weight 500
+            p
+                margin-bottom .333333rem /* 25/75 */
+                text-align justify
+        .iSee
+            width 5.013333rem /* 376/75 */
+            height 1.093333rem /* 82/75 */
+            transformMiddle()
+            top 7.453333rem /* 559/75 */
+            

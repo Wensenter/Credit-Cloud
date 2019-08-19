@@ -4,7 +4,7 @@ window.onload = function(){
     $('.publish_box .title').focus(inputFocus)
 
     //input失焦
-    // $('.publish_box .title').blur(inputBlur)
+    $('.publish_box .title').blur(inputBlur)
 
     //发布按钮点击
     $('.publish_box .publish_button').click(inputBlur)

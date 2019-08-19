@@ -10,6 +10,30 @@
             &>.swiper-slide>a>img
                 width 9.306667rem /* 698/75 */
                 height 4.346667rem /* 326/75 */
+    .loadPic
+        background #ffffff
+        width 9.293333rem /* 697/75 */
+        height 2.026667rem /* 152/75 */
+        margin .36rem /* 27/75 */ auto .293333rem /* 22/75 */
+        border-radius .266667rem /* 20/75 */
+        padding .466667rem /* 35/75 */ 0
+        display flex
+        flex-direction column
+        align-items center
+        justify-content flex-start
+        &>p
+            display flex
+            align-items center
+            font-size .4rem /* 30/75 */
+            color #333333
+            i 
+                icon_bg('../../images/civilizationSquare/load_icon.png',.666667rem /* 50/75 */,.426667rem /* 32/75 */)
+        .loadBox_icon
+            width 1.266667rem /* 95/75 */
+            height 1.266667rem /* 95/75 */ 
+            margin-top .293333rem /* 22/75 */
+        &>input
+            visibility hidden
     .deatilList
         background #ffffff
         width 8.293333rem /* 622/75 */
@@ -24,22 +48,39 @@
             font-weight 500
             font-size .4rem /* 30/75 */
             position relative
-            &>input
+            #startTime,#endTime
+                width 5.333333rem /* 400/75 */
+                height .533333rem /* 40/75 */
+                position absolute
+                right -0.3125rem
+                bottom .52rem /* 39/75 */
+                color transparent
+            input,textarea
                 border 0
                 outline none 
-                color #D7D7D7
+                color #333333
                 background transparent
                 flex 1
                 &::-webkit-input-placeholder
                     color #D7D7D7
+            textarea
+                height 2.32rem /* 174/75 */
             .title
                 color #333333
                 margin-right .133333rem /* 10/75 */
+            .timevalue
+                display flex
+
+                .startTimeValue,.endTimeValue
+                    flex 0 0 4rem /* 300/75 */
             &>label>i
                 position absolute
-                right 1.2rem /* 90/75 */
+                right .4rem /* 30/75 */
                 bottom .52rem /* 39/75 */
                 icon_bg('../../images/civilizationSquare/date_icon.png',.533333rem /* 40/75 */)
+            &:nth-child(8),&:nth-child(9)
+                height 2.666667rem /* 200/75 */   
+                align-items flex-start 
     &>button
         border 0 
         outline none

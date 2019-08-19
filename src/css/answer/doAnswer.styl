@@ -1,0 +1,103 @@
+@import '../stylus/index.styl'
+.wrapper
+    position absolute
+    top 0
+    left 0
+    width 100%
+    min-height 17.76rem /* 1332/75 */
+    background url('../../images/answer/answer_bg.png') no-repeat
+    background-size 100% 100%
+    .count
+        position absolute
+        top 7.253333rem /* 544/75 */
+        right .96rem /* 72/75 */
+        width .92rem /* 69/75 */
+        height .92rem /* 69/75 */
+        border-radius 50%
+        background url('../../images/answer/count.png') no-repeat
+        background-size 100% 100%
+        text-align center
+        line-height .92rem /* 69/75 */
+        color #ffffff
+        font-weight bold
+        font-size .4rem /* 30/75 */
+    .content
+        position absolute
+        top 8.84rem /* 663/75 */
+        left 50%
+        transform translateX(-50%)
+        width 7.36rem /* 552/75 */
+        display flex
+        flex-direction column
+        align-items center
+        .title
+            color #F61C64
+            font-size .426667rem /* 32/75 */
+            font-weight bold
+        &>ul
+            display flex
+            flex-direction column
+            justify-content center
+            margin-top .52rem /* 39/75 */
+            &>li
+                width 5.08rem /* 381/75 */
+                height .96rem /* 72/75 */
+                display flex
+                justify-content space-around
+                align-items center
+                background #F3F3F3
+                margin-bottom .36rem /* 27/75 */
+                border-radius .133333rem /* 10/75 */
+                color #E23062
+                padding 0 .4rem /* 30/75 */
+                &.active
+                    background url('../../images/answer/selected.png') no-repeat
+                    background-size 100% 100%
+                    color #fff
+                &>span
+                    flex 1
+                &>img
+                    width .56rem /* 42/75 */
+                    height .56rem /* 42/75 */
+        &>button 
+            width 5.853333rem /* 439/75 */
+            height .973333rem /* 73/75 */
+            background url('../../images/answer/next.png') no-repeat
+            background-size 100% 100%
+            border 0
+            outline none
+    .pop_2
+        display none
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background rgba(0,0,0,0.5)
+        .botLight,.light,.congratulations,.iSee,.text
+            position absolute
+            left 50%
+            transform translateX(-50%)
+        .botLight
+            width 6.2rem /* 465/75 */
+            height 6.2rem /* 465/75 */
+            bottom 8.08rem /* 606/75 */
+        .light
+            width 4.066667rem /* 305/75 */
+            height 4.053333rem /* 304/75 */
+            bottom 8.96rem /* 672/75 */
+        .congratulations
+            width 7.2rem /* 540/75 */
+            height 6.786667rem /* 509/75 */
+            bottom 4.866667rem /* 365/75 */
+        .text
+            font-size .373333rem /* 28/75 */
+            color #9F9F9F
+            width 5.346667rem /* 401/75 */
+            word-break break-word
+            text-align justify
+            bottom 6.546667rem /* 491/75 */
+        .iSee
+            width 5.013333rem /* 376/75 */
+            height 1.093333rem /* 82/75 */
+            bottom 5.44rem /* 408/75 */

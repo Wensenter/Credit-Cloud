@@ -3,8 +3,31 @@ window.onload = function () {
         autoplay: false,
         loop: true
     });    
-    var d = getFormat()
-    $("#bt").val(d);
+
+    $('#startTime').change(function(){
+        var valArr = $(this).val().replace('T', ' ').split(':');
+        var len = valArr.length;
+        if(len >= 3){
+            valArr.pop(len-1);
+            var valStr = valArr.join(':');
+            $('.startTimeValue').val(valStr)
+        }else{
+            $('.startTimeValue').val($(this).val().replace('T', ' '))
+        }
+        
+    })
+
+    $('#endTime').change(function () {
+        var valArr = $(this).val().replace('T', ' ').split(':');
+        var len = valArr.length;
+        if (len >= 3) {
+            valArr.pop(len - 1);
+            var valStr = valArr.join(':');
+            $('.endTimeValue').val(valStr)
+        } else {
+            $('.endTimeValue').val($(this).val().replace('T', ' '))
+        }
+    })
 
     $('.content button').click(function(){
         $('.bg').show();
@@ -12,6 +35,11 @@ window.onload = function () {
 
     $('.bg').on('touchmove',function(e){
         e.preventDefault();
+    })
+
+    //点击图片上传
+    $('.loadBox_icon').click(function () {
+        $(this).next().click();
     })
 };
 

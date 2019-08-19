@@ -31,6 +31,12 @@
                 </div>
             </div>
         </div>
+        <!-- 新加上传图片 -->
+        <div class="loadPic">
+            <p><i class="load_icon"></i>上传照片</p>
+            <img src="../../images/civilizationSquare/loadBox_icon.png" class="loadBox_icon">
+            <input type="file" accept="image/*" multiple>
+        </div>
         <ul class="deatilList">
             <li>
                 <span class="title">活动名称:</span><input type="text" placeholder="请输入活动名称">
@@ -39,7 +45,18 @@
                 <span class="title">活动地点:</span><input type="text" placeholder="请输入活动地点">
             </li>
             <li>
-                <span class="title">活动时间:</span><input id="bt" type="datetime-local"><label for="bt"><i></i></label>
+                <span class="title"><span style="color:red">*</span>活动开始时间:</span>
+                <input id="startTime" type="datetime-local">
+                <label for="startTime" class="timevalue"><input type="text" class="startTimeValue" readonly placeholder="点击日历选择开始时间"></label>
+
+                <label for="startTime"><i></i></label>
+            </li>
+            <li>
+                <span class="title"><span style="color:red">*</span>活动结束时间:</span>
+                <input id="endTime" type="datetime-local">
+                <label for="endTime" class="timevalue"><input type="text" class="endTimeValue" readonly placeholder="点击日历选择结束时间"></label> 
+
+                <label for="endTime"><i></i></label>
             </li>
             <li>
                 <span class="title">参加对象:</span><input type="text" placeholder="请输入参加对象">
@@ -54,10 +71,10 @@
                 <span class="title">举办方:</span><input type="text" placeholder="举办方">
             </li>
             <li>
-                <span class="title">活动内容:</span><input type="text" placeholder="请输入内容">
+                <span class="title">活动内容:</span><textarea type="text" placeholder="请输入内容"></textarea>
             </li>
             <li>
-                <span class="title">注意事项:</span><input type="text" placeholder="请填写关于此场活动注意事项">
+                <span class="title">注意事项:</span><textarea type="text" placeholder="请填写关于此场活动注意事项"></textarea>
             </li>
         </ul>
         <button type="button"></button>

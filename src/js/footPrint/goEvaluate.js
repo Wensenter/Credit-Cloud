@@ -4,7 +4,30 @@ window.onload = function () {
     })
 
     $('.l_stars i,.s_stars i').click(function(){
-        showStar(this)
+        let count = showStar(this)
+        let textDom = $(this).parent().siblings('.evaluate_text')
+        let text = ''
+        switch(count) {
+            case 1:
+                text = '不行'
+                break
+            case 2:
+                text = '一般'
+                break
+            case 3:
+                text = '挺不错'
+                break
+            case 4:
+                text = '超级棒'
+                break
+            case 5:
+                text = '无敌棒'
+                break
+            case 0:
+                text = '不行'
+                break
+        }
+        textDom.text(text)
     })
 }
 
@@ -27,4 +50,5 @@ function showStar(obj, count=5){
     }
 
     $(obj).attr('class', 'star')
+    return starCount
 }

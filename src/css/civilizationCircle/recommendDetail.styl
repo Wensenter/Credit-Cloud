@@ -1,5 +1,26 @@
 @import '../tools.styl'
 @import '../stylus/mixins.styl'
+  .wrapper
+    width 100vw
+    height 100vh
+    padding-bottom 8vh
+    box-sizing border-box
+    background-color $c_lgray
+    overflow auto
+    &:after
+      display block
+      content: ''
+      width 0
+      height 0
+      bg-img('../../images/logo.png')
+      text-align: center
+      font-size: 24px
+      color #000000
+      opacity 0
+      margin auto
+      // margin-top: 50px
+      margin-bottom: 0
+
 .content_list
   height 92%
   padding .4rem .3rem /* 30/75 */
@@ -12,7 +33,6 @@
     .commtent_type
       padding .2rem .4rem
       font-size: $fs-m
-      font-weight:500;
       color $c_gray
     .comment_list
       margin-bottom 0.3rem
@@ -28,24 +48,28 @@
               font-size: .346667rem /* 26/75 */
               color $c_gray
         .text
-          font-size $fs-l
+          font-size 26px
           color: #333333
           padding .2rem 0
+          text-align justify
         .reply_lists
           background:rgba(247,247,247,1);
           padding 16px
           .reply_list
             flex-center()
             justify-content flex-start
-            font-size:30px;
+            font-size:24px;
             font-family:PingFang-SC-Medium;
-            font-weight:500;
             margin-top 6px
+            text-align justify
             p
               color:rgba(92,135,235,1);
               align-self: flex-start
             span 
               flex 1
+              em
+                padding-left: 20px
+                color:rgba(92,135,235,1);
 
 .publish_comment_box
   position absolute

@@ -49,7 +49,6 @@ class PreviewImg {
       $('.swiper-wrapper').empty().append(img_Html)
       that.swiper.slideTo(img_index, 1000, false);
       $('.imgs_mask_box').fadeIn()
-      console.log(img_Html)
     })
   }
   closeMask() {

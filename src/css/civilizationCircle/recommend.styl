@@ -10,6 +10,19 @@
   box-sizing border-box
   background-color $c_lgray
   overflow auto
+  &:after
+    display block
+    content: ''
+    width 300px
+    height 72px
+    bg-img('../../images/logo.png')
+    text-align: center
+    font-size: 24px
+    color #000000
+    opacity 0.6
+    margin auto
+    // margin-top: 50px
+    margin-bottom: 26px
 
 
 // 导航栏
@@ -40,9 +53,10 @@
 // 内容列表容器
 .content_list
   padding .32rem /* 24/75 */
-  // height 76%
+  min-height 70vh
   // margin-bottom 20vh
   // overflow auto
+
 
 // 搜索列表
 .search_list_box

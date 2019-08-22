@@ -48,18 +48,43 @@
             <div class="input_box">
                 <textarea placeholder="参加本次活动感觉怎么样?"></textarea>
                 <div class="addPic_box">
+                    <div class="img_input">
+                        <img src="../../images/111.png" alt="">
+                        <!-- 关闭按钮 -->
+                        <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+                    </div>
+                    <div class="img_input">
+                        <img src="../../images/111.png" alt="">
+                        <!-- 关闭按钮 -->
+                        <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+                    </div>
+                    <div class="img_input">
+                        <img src="../../images/111.png" alt="">
+                        <!-- 关闭按钮 -->
+                        <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+                    </div>
+                    <div class="img_input">
+                        <img src="../../images/111.png" alt="">
+                        <!-- 关闭按钮 -->
+                        <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+                    </div>
                     <div class="addPic">
                         <img class="add_bg" src="../../images/footPrint/add_bg.png">
                         <img class="add_icon" src="../../images/footPrint/add_icon.png">
                         <span>添加照片</span>
                     </div>
                     <input type="file">
-                </div>
+                </div>  
             </div>
         </div>
         <button type="button"></button>
     </div>
     <script src="../../common/jquery.min.js"></script>
     <script src="../../js/footPrint/goEvaluate.js"></script>
+    <script>
+        $('.closeImg').on('click',function() {
+            $(this).parent().remove()
+        })
+    </script>
 </body>
 </html>

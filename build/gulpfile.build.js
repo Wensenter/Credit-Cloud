@@ -6,10 +6,10 @@ const uglify = require('gulp-uglify'); // 压缩js
 const connect = require('gulp-connect'); // websock更新文件刷新浏览器
 const plumber = require('gulp-plumber'); // 避免出错task终止
 const minimist = require('minimist'); // 用于命令行传参数
-const gulpif = require('gulp-if'); // 用于命令行传参
+const gulpif = require('gulp-if'); // 用于判断
 const cleanCSS = require('gulp-clean-css'); // 缩小css文件
-const changed = require('gulp-newer'); // 增量更新
-const babel = require('gulp-babel');
+const changed = require('gulp-newer'); // 增量更新(一个Gulp插件，仅用于传递比相应目标文件更新的源文件。)
+const babel = require('gulp-babel');  //babel转译
 const opn = require('opn'); // 开启浏览器
 const del = require('del'); // 删除dist文件夹
 const Config = require('./gulpfile.config');
@@ -38,10 +38,10 @@ const openServer = async () => await connect.server(Config.connect);
 const htmls = () => {
   return gulp
     .src(Config.html.src)
-    .pipe(changed(Config.html.dist))
+    .pipe(changed(Config.html.dist)) //只更新修改过的html文件
     .pipe(plumber())
-    .pipe(gulp.dest(Config.html.dist))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(Config.html.dist)) //输出到sist文件夹
+    .pipe(connect.reload()); 
 };
 
 // CSS文件

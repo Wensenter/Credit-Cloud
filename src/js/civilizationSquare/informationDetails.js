@@ -19,13 +19,13 @@ window.onload = function(){
         $('.publish_box').css({
             'background': '#F7F7F7',
         })
-        $(this).css({
+        $('.publish_box .title').css({
             'background': '#ffffff',
             'width': '6.866667rem',
             'height': '.8rem',
             'borderRadius': '04rem'
         })
-        $(this).attr('placeholder', '好观点将优先展示')
+        $('.publish_box .title').attr('placeholder', '好观点将优先展示')
     }
 
     function inputBlur(){
@@ -38,13 +38,13 @@ window.onload = function(){
         $('.publish_box').css({
             'background': '#ffffff',
         })
-        $(this).css({
+        $('.publish_box .title').css({
             'background': 'transparent',
             'width': 'auto',
             'height': 'auto',
             'borderRadius': '0'
         })
-        $(this).attr('placeholder', '欢迎发表你的观点')
+        $('.publish_box .title').attr('placeholder', '欢迎发表你的观点')
     }
 
     //收藏
@@ -68,6 +68,13 @@ window.onload = function(){
     $('.detail .share,.opr .forward').click(function(){        
         $('.bg').css({
             'display':'block'
+        })
+    })
+
+    //取消分享指引
+    $('.bg_iSee').click(function(){
+        $('.bg').css({
+            'display': 'none'
         })
     })
 }

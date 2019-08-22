@@ -7,9 +7,15 @@
     min-height 17.76rem /* 1332/75 */
     background url('../../images/answer/answer_bg.png') no-repeat
     background-size 100% 100%
+    .process
+        position absolute
+        top 4.666667rem /* 350/75 */
+        left 1.333333rem /* 100/75 */
+        color #f61c64
+        font-size .426667rem /* 32/75 */
     .count
         position absolute
-        top 7.253333rem /* 544/75 */
+        top 4.666667rem /* 350/75 */
         right .96rem /* 72/75 */
         width .92rem /* 69/75 */
         height .92rem /* 69/75 */
@@ -23,13 +29,12 @@
         font-size .4rem /* 30/75 */
     .content
         position absolute
-        top 8.84rem /* 663/75 */
+        top 6.253333rem /* 469/75 */
         left 50%
+        height 7.413333rem /* 556/75 */
+        overflow-y scroll
         transform translateX(-50%)
         width 7.36rem /* 552/75 */
-        display flex
-        flex-direction column
-        align-items center
         .title
             color #F61C64
             font-size .426667rem /* 32/75 */
@@ -38,7 +43,8 @@
             display flex
             flex-direction column
             justify-content center
-            margin-top .52rem /* 39/75 */
+            align-items center
+            margin .52rem /* 39/75 */auto 0
             &>li
                 width 5.08rem /* 381/75 */
                 height .96rem /* 72/75 */
@@ -59,7 +65,9 @@
                 &>img
                     width .56rem /* 42/75 */
                     height .56rem /* 42/75 */
-        &>button 
+        .next
+            display block
+            margin 0 auto
             width 5.853333rem /* 439/75 */
             height .973333rem /* 73/75 */
             background url('../../images/answer/next.png') no-repeat

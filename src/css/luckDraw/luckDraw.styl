@@ -4,44 +4,45 @@ transformMiddle()
     left 50%
     transform translateX(-50%)
 .wrapper
-    height 100vh
+    min-height 100vh
     background url('../../images/luckDraw/bg.png') no-repeat
     background-size 100% 100%
     position relative
+    overflow hidden
     .balloon
         width 1.173333rem /* 88/75 */
         height 1.666667rem /* 125/75 */
         position absolute
-        top 3rem /* 225/75 */
+        top 1.666667rem /* 125/75 */
         right .44rem /* 33/75 */
     .turntable_out
       width 9.2rem /* 690/75 */
       height 12.28rem /* 921/75 */
       position absolute  
-      top 3.693333rem /* 277/75 */
+      top 2.36rem /* 177/75 */
       transformMiddle()
     .dot
         width 8.88rem /* 666/75 */
         position absolute
-        top 3.853333rem /* 289/75 */
+        top 2.52rem /* 189/75 */
         transformMiddle()
     .turntable_in
         width 8.173333rem /* 613/75 */
         margin-left 50%
         position absolute
-        top 4.213333rem /* 316/75 */
+        top 2.88rem /* 216/75 */
         left -4.086667rem /* 306.5/75 */
     .pointer
         width 2.4rem /* 180/75 */
         height 2.986667rem /* 224/75 */
         position absolute
-        top 6.52rem /* 489/75 */
+        top 5.186667rem /* 389/75 */
         transformMiddle()
     .luckDraw_icon
         width 1.066667rem /* 80/75 */
         height .506667rem /* 38/75 */
         position absolute
-        top 8.053333rem /* 604/75 */
+        top 6.72rem /* 504/75 */
         transformMiddle()
     .pop_wrapper
         background url('../../images/luckDraw/pop_bg.png') no-repeat
@@ -53,14 +54,30 @@ transformMiddle()
         height 100%
         display none
         .pop_tip
+            width 4.92rem /* 369/75 */
+            height 4.573333rem /* 343/75 */
             position absolute
-            top 7.04rem /* 528/75 */
+            bottom 6.173333rem /* 463/75 */
             transformMiddle()
         .prize
+            width 1.586667rem /* 119/75 */
+            height 1.946667rem /* 146/75 */
             position absolute
-            top 8.12rem /* 609/75 */
+            bottom 7.72rem /* 579/75 */
             transformMiddle()
         .close
+            width .906667rem /* 68/75 */
+            height .906667rem /* 68/75 */
             position absolute
-            top 14.786667rem /* 1109/75 */
+            bottom 2.093333rem /* 157/75 */
+            transformMiddle()
+        .receive_button
+            width 5.586667rem /* 419/75 */
+            height .986667rem /* 74/75 */
+            background url('../../images/luckDraw/receive_button.png') no-repeat
+            background-size 100% 100%
+            border 0
+            outline none
+            position absolute
+            bottom 4.466667rem /* 335/75 */
             transformMiddle()

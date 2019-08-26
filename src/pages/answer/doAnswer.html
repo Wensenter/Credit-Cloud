@@ -9,12 +9,13 @@
 </head>
 <body>
     <div class="wrapper">
+        <img src="../../images/answer/answer_bg.png" class="bg">
         <span class="count">10</span>
         <span class="process">1/5</span>
         <div class="content">
             <p class="title">1.中国共产党成立于下方哪一个日期？中国共产党成立于下方哪一个日期？中国共产党成立于下方哪一个日期？</p>
-            <ul>
-                <li><span>A.1921年7月</span><img class="false" src="../../images/answer/false_icon.png"></li>
+            <ul >
+                <li><span>A.1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月1921年7月</span><img class="false" src="../../images/answer/false_icon.png"></li>
                 <li><span>A.1921年7月</span></li>
                 <li><span>A.1921年7月</span></li>
                 <li class="active"><span>A.1921年7月</span><img class="true" src="../../images/answer/true_icon.png"></li>
@@ -22,14 +23,19 @@
             <button class="next" type="button"></button>
         </div>
         <div class="pop_2">
-            <img class="congratulations" src="../../images/answer/congratulations.png">
-            <p class="text">共答对3道题，获取3个美德积分,答错2道题，再接再励，加油哦~</p>
-            <img class="iSee" src="../../images/answer/iSee.png">
-            <img class="botLight" src="../../images/answer/botLight.png">
-            <img class="light" src="../../images/answer/light.png">
+            <div class="pop_bg">
+                <img class="botLight" src="../../images/answer/botLight.png">
+                <img class="light" src="../../images/answer/light.png">
+                <h4>恭喜您！</h4>
+                <p class="text">共答对3道题，获取3个美德积分,答错2道题，再接再励，加油哦~</p>
+                <img class="iSee" src="../../images/answer/iSee.png">
+            </div>
         </div>
     </div>
     <script src="../../common/jquery.min.js"></script>
     <script src="../../js/answer/doAnswer.js"></script>
+    <script>
+        $('.content').scrollTop(0)
+    </script>
 </body>
 </html>

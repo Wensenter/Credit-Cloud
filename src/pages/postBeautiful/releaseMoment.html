@@ -14,7 +14,9 @@
       media="screen"
       href="../../css/postBeautiful/releaseMoment.css"
     />
+    <link rel="stylesheet" href="../../css/input_img_show.css">
     <script src="../../js/flexible.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
   </head>
 
   <body>
@@ -30,14 +32,24 @@
             <!-- 上传图片 -->
             <div class="upImgs_box d-flex flex-wrap jc-start ai-center">
               <!-- img -->
-              <div class="img_box show_img_box">
+              <!-- <div class="img_box show_img_box">
                 <img src="../../images/111.png" class="show_img">
                 <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+              </div>
+              <div class="img_box show_img_box">
+                <img src="../../images/energyTree/pow_tree.png" class="show_img">
+                <img src="../../images/postBeautiful/closeImg.png" class="closeImg">
+              </div> -->
+              <!-- video -->
+              <div class="video_input_box">
+                <video id="video" src="../../images/video.mp4" class="img_video"></video>
+                <img src="../../images/postBeautiful/closeImg.png" class="closeVideo">
+                <img src="../../images/civilizationCircle/palyBtn.png" class="palyBtn">
               </div>
               <!-- 上传 -->
               <div class="img_box upImg_icon_box">
                 <img src="../../images/postBeautiful/upImgIcon.png" class="add_img">
-                <input type="file" name="file" id="upImg" accept="image/*"  multiple  class="add_input">
+                <input type="file" name="file" id="upImg" accept="video/*" capture="camcorder" multiple  class="add_input">
               </div>
             </div>
             <!-- 标签 -->
@@ -191,6 +203,7 @@
   <!-- <script src="../js/isWexin.js"></script> -->
   <script src="../../common/jquery.min.js"></script>
   <script src="../../js/postBeautiful/releaseMoment.js"></script>
+  <script src="../../js/input_img_show.js"></script>
   <script>
     // 判断安卓4，如果是安卓4就加上capture属性.
     $(function () {
@@ -201,5 +214,19 @@
       $("input:file").attr("capture","camera");
     };
     })
+    let inputImg = new inputImgShow('.show_img')
+    // 播放视频
+    // 点击播放按钮
+$('.palyBtn').on('click',function(e) {
+  $('#video').get(0).play()
+  $('#video').attr('controls',true)
+  $('#video').attr('controls',true)
+  $('.upImg_icon_box').css('display','none')
+  $(this).fadeOut()
+})
+$('.closeVideo').on('click',function() {
+  $(this).parent().remove()
+  $('.upImg_icon_box').css('display','block')
+})
   </script>
 </html>

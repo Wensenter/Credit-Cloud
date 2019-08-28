@@ -4,6 +4,10 @@
     50% {opacity:1;top:3.333333rem;}
     100% {opacity:0;top:2.573333rem; }
 }
+// 树上苹果位置
+apos(t,l)
+    top (t - 6) px
+    left (l - 6) px
 .wrapper
     background #F9F9F9
     border-bottom .013333rem /* 1/75 */solid transparent
@@ -13,6 +17,42 @@
         background url('../../images/energyTree/treeBanner.png') no-repeat
         background-size 100% 100%
         position relative
+        .pow_tree
+            position absolute
+            top 283px
+            left 141px
+            full-img('../../images/energyTree/pow_tree.png')
+            .fruits
+                position relative
+                width: 100%
+                height 100%
+                .fruit
+                    position: absolute
+                    full-img('../../images/energyTree/apple_s.png')
+                    &:first-child
+                        apos(114 ,243)
+                    &:nth-child(2)
+                        apos(130 ,126)
+                    &:nth-child(3)
+                        apos(68 ,213)
+                    &:nth-child(4)
+                        apos(40 ,138)
+                    &:nth-child(5)
+                        apos(48 ,291)
+                    &:nth-child(6)
+                        apos(122 ,372)
+                    &:nth-child(7)
+                        apos(170 ,185)
+                    &:nth-child(8)
+                        apos(170 ,277)
+                    &:nth-child(9)
+                        apos(186 ,38)
+                    &:nth-child(10)
+                        apos(194 ,349)
+                    &:nth-child(11)
+                        apos(109 ,68)
+                    &:nth-child(12)
+                        apos(182 ,406)
         .appleCount
             height 1.066667rem /* 80/75 */
             position absolute
@@ -77,6 +117,63 @@
             right .826667rem /* 62/75 */
             background url('../../images/energyTree/exchange.png') no-repeat
             background-size 100% 100%
+        .donate-box
+            display none
+            flex-direction column
+            justify-content space-around
+            position absolute
+            top 7.786667rem /* 584/75 */
+            left 50%
+            transform translateX(-50%)
+            width 7.733333rem /* 580/75 */
+            height 5.333333rem /* 400/75 */
+            border-radius .133333rem /* 10/75 */
+            background #ffffff
+            &>h3
+                font-size:40px;
+                font-family:PingFang SC;
+                font-weight:bold;
+                color:rgba(0,0,0,1);
+                margin-top: 38px
+                text-align: center
+            .donate-text
+                margin-top: 38px
+                padding 0 60px
+                p
+                    text-align center
+                    font-size:28px;
+                    font-family:PingFang SC;
+                    font-weight:500;
+                    color:rgba(159,159,159,1);
+                    line-height:40px;
+                .donate-op 
+                    font-size:22px;
+                    font-family:PingFang SC;
+                    font-weight:500;
+                    color:rgba(159,159,159,1);
+                    line-height:40px;
+                    opacity:0.5;
+                    text-align center
+                    padding-top: 10px
+            .button_list
+                display flex
+                justify-content space-around
+                margin-top .36rem /* 27/75 */
+                &>button
+                    border .026667rem /* 2/75 */ solid #F6603D
+                    border-radius .44rem /* 33/75 */
+                    outline none 
+                    width 2.4rem /* 180/75 */
+                    height .88rem /* 66/75 */
+                    font-size .32rem /* 24/75 */
+                    font-weight 400
+                .cancle
+                    background #ffffff
+                    color #F6603D
+                .sure
+                    color #FFFFFF
+                    border 0
+                    background linear-gradient(86deg,rgba(246,124,85,1) 0%,rgba(255,97,93,1) 100%)
         .pop_box
             display none
             flex-direction column
@@ -98,7 +195,7 @@
                 display flex
                 align-items center
                 justify-content center
-                margin-bottom .466667rem /* 35/75 */
+                // margin-bottom .366667rem /* 35/75 */
                 &>span
                     display flex
                     align-items center
@@ -132,7 +229,8 @@
             .button_list
                 display flex
                 justify-content space-around
-                margin-top .36rem /* 27/75 */
+                // margin-top .26rem /* 27/75 */
+                margin-bottom: .2rem
                 &>button
                     border .026667rem /* 2/75 */ solid #F6603D
                     border-radius .44rem /* 33/75 */
@@ -147,7 +245,7 @@
                 .sure
                     color #FFFFFF
                     border 0
-                    background #F6603D
+                    background linear-gradient(86deg,rgba(246,124,85,1) 0%,rgba(255,97,93,1) 100%)
         .tip
             display none
             width 3.533333rem /* 265/75 */
@@ -215,6 +313,8 @@
                 top 8.573333rem /* 643/75 */
                 left 50%
                 transform translateX(-50%)
+                width 220px
+                height: 418px
         &>ul
             &>li
                 width 8.92rem /* 669/75 */

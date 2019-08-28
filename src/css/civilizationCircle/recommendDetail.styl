@@ -92,3 +92,75 @@
     border-radius: .5rem
     font-size .4rem /* 24/75 */
     margin-left .2rem
+
+// 蒙层
+.mask_box
+  position absolute
+  width 100vw
+  height 100vh
+  top 0
+  left 0
+  background rgba(0, 0, 0, 0.5)
+  display none
+  .rule_box
+    absolute-center()
+    box-sizing border-box
+    width 540px
+    height 416px
+    background rgba(255, 255, 255, 1)
+    border-radius 20px
+    padding 40px 43px
+    flex-center()
+    flex-direction column
+    justify-content flex-start
+    h1
+      font-size 40px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(35, 35, 35, 1)
+      line-height 20px
+      text-align center
+      margin-top 30px
+    .text
+      width 454px
+      height 106px
+      font-size:40px;
+      font-family:PingFang SC;
+      font-weight:bold;
+      color:rgba(35,35,35,1);
+      line-height 40px
+      flex-center()
+      flex-direction column
+      text-align center
+      margin-top 50px
+    .know_btn
+      width 376px
+      height 80px
+      background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)
+      border-radius 40px
+      font-size 30px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(255, 255, 255, 1)
+      line-height 20px
+      flex-center()
+      margin-top 40px
+    &.exChange
+      .bottom_btn
+        flex-center()
+        justify-content space-between
+        margin-top 60px
+        width 100%
+        .btn
+          width 200px
+          height 80px
+          flex-center()
+          color #ffffff
+          font-size: 30px
+          border-radius: 50px
+          font-weight: 500
+          &.canel
+            border solid 2px rgba(255, 97, 93, 1)
+            color rgba(255, 97, 93, 1)
+          &.confirm
+            background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)

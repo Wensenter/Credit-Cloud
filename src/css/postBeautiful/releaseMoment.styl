@@ -32,6 +32,7 @@
     float right
 // 图片上传
 .upImgs_box
+  width 100%
   max-height 6.666667rem /* 500/75 */
   overflow hidden
   .img_box
@@ -66,6 +67,31 @@
           height 100%
           height 100%
           opacity 0
+  .video_input_box
+    position relative
+    width 621px
+    height 349px
+    border-radius:10px;
+    // left 5%
+    // transform: translateX(-50%)
+    overflow hidden
+    video
+      width 100%
+      height 100%
+      object-fit: cover
+    .closeVideo
+      position absolute
+      top 0
+      right 10px
+      width .506667rem /* 38/75 */
+      height @width 
+      cursor pointer
+      click-area(0.3rem)
+    .palyBtn
+      width 1.066667rem /* 80/75 */
+      height @width
+      absolute-center()
+      cursor pointer
 // 标签
 .release_tip_box
   margin-top .3rem

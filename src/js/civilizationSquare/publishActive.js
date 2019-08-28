@@ -27,6 +27,7 @@ window.onload = function () {
         } else {
             $('.endTimeValue').val($(this).val().replace('T', ' '))
         }
+        // alert($('.endTimeValue').text())
     })
 
     $('.content button').click(function(){

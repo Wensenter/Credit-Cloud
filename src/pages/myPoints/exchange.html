@@ -125,7 +125,36 @@
         </div>
       </div>
     </div>
+    <!-- mask -->
+  <div class="mask_box">
+      <div class="rule_box exChange">
+        <!-- suc兑换成功 fal兑换失败 -->
+        <div class="img suc"></div>
+        <h1>兑换成功</h1>
+        <div class="text">
+          <p>礼品在“我的礼品”，请在所属工作站
+              或在所属学校线下兑换</p>
+        </div>
+        <div class="bottom_btn "></div>
+      </div>
+  </div>
+  <!-- mask2 -->
+  <div class="mask_box2">
+      <div class="rule_box exChange">
+        <h1>兑换须知</h1>
+        <div class="text">
+          <p>兑换线下礼品时必须在工作人员面前
+            点击“兑换”。</p>
+          <span> “已兑换”为无效卡券。</span>
+        </div>
+        <div class="bottom_btn ">
+          <div class="btn canel"></div>
+          <div class="btn confirm"></div>
+        </div>
+      </div>
+  </div>
     <script src="../../common/jquery.min.js"></script>
+    <!-- <script src="../../js/personalCenter/myGift.js"></script> -->
     <script>
       $('.check-btn').on('click', function() {
         var checkId = $(this).attr('data-check');
@@ -139,6 +168,9 @@
           $(checkClass).removeClass('hide');
         }
       });
+      $('.bottom_btn').on('click',function() {
+        $('.mask_box').fadeOut()
+      })
     </script>
   </body>
 </html>

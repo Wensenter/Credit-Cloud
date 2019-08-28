@@ -28,10 +28,32 @@ body
             justify-content flex-start
             align-items flex-end
             .addPic_box
+                position relative
                 width 2rem /* 150/75 */
                 height 2rem /* 150/75 */
-                position relative
+                flex-center()
+                flex-direction: column
+                justify-content flex-start
+                flex-wrap wrap
+                overflow hidden
+                .img_show
+                    position relative
+                    width 2rem
+                    height 2rem
+                    overflow hidden
+                    .img_show1
+                        width 2rem
+                        height 2rem
+                        // object-fit: cover
+                    .close
+                        position absolute
+                        top 0 
+                        right 0
+                        full-img('../../images/postBeautiful/closeImg.png')
                 .addPic
+                    position relative
+                    width 2rem /* 150/75 */
+                    height 2rem /* 150/75 */
                     .add_bg,&>input
                         position absolute
                         top 0
@@ -127,4 +149,3 @@ body
                     i
                         icon_bg('../../images/footPrint/left_arrow.png',.12rem /* 9/75 */,.226667rem /* 17/75 */)
                         left -.12rem /* 9/75 */
-                

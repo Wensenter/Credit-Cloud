@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>建议反馈</title>
     <link rel="stylesheet" href="../../css/footPrint/proposal.css">
+    <link rel="stylesheet" href="../../css/input_img_show.css">
     <script src="../../js/flexible.js"></script>
 </head>
 <body>
@@ -13,6 +14,10 @@
         <textarea placeholder="可在此填写对于系统/社区/学校相关建议"></textarea>
         <div>
             <div class="addPic_box">
+                <div class="img_show">
+                    <img src="../../images/111.png" class="img_show1">
+                    <div class="close"></div>
+                </div>
                 <div class="addPic">
                     <img class="add_bg" src="../../images/footPrint/add_bg.png">
                     <img class="add_icon" src="../../images/footPrint/add_icon.png">
@@ -79,6 +84,7 @@
     </div>
     <script src="../../common/jquery.min.js"></script>
     <script src="../../js/footPrint/proposal.js"></script>
+    <script src="../../js/input_img_show.js"></script>
     <script>
         // 判断安卓4，如果是安卓4就加上capture属性.
         $(function () {
@@ -91,6 +97,15 @@
                 $("input:file").attr("capture", "camera");
             };
         })
+        $('.close').on('click',function() {
+            $(this).parent().remove()
+        })
+        // $('.img_show1').on('click',function() {
+        //     $('.img_mask').show()
+        //     $('.big_img').find('img').attr('src',$(this).attr('src'))
+        // })
+        let inputImg = new inputImgShow('.img_show1')
+        
     </script>
 </body>
 </html>

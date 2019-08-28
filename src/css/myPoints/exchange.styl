@@ -96,3 +96,137 @@
           .btn-check
             margin-top: 10px
             full-img('../../images/myPoints/exchange.png')
+
+// 蒙层
+.mask_box
+  position fixed
+  width 100vw
+  height 100vh
+  top 0
+  left 0
+  background rgba(0, 0, 0, 0.5)
+  display none
+  .rule_box
+    absolute-center()
+    box-sizing border-box
+    width 540px
+    height 590px
+    background rgba(255, 255, 255, 1)
+    border-radius 20px
+    padding 40px 43px
+    flex-center()
+    flex-direction column
+    justify-content flex-start
+    .img
+      width: 160px
+      height 160px
+      &.suc
+        bg-img('../../images/footPrint/suc_icon.png')
+      &.fal
+        bg-img('../../images/footPrint/fal_icon.png')
+    h1
+      font-size 40px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(35, 35, 35, 1)
+      line-height 20px
+      text-align center
+      margin-top 30px
+    .text
+      width 454px
+      height 106px
+      font-size 28px
+      font-family PingFang-SC-Medium
+      font-weight 500
+      color rgba(159, 159, 159, 1)
+      line-height 40px
+      flex-center()
+      flex-direction column
+      text-align center
+      margin-top 40px
+    .know_btn
+      width 376px
+      height 80px
+      background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)
+      border-radius 40px
+      font-size 30px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(255, 255, 255, 1)
+      line-height 20px
+      flex-center()
+      margin-top 40px
+    &.exChange
+      .bottom_btn
+        margin-top 40px
+        width 376px
+        height 80px
+        bg-img('../../images/footPrint/isee_icon.png')
+
+// 蒙层
+.mask_box2
+  position fixed
+  width 100vw
+  height 100vh
+  top 0
+  left 0
+  background rgba(0, 0, 0, 0.5)
+  display none
+  .rule_box
+    absolute-center()
+    box-sizing border-box
+    width 540px
+    height 416px
+    background rgba(255, 255, 255, 1)
+    border-radius 20px
+    padding 40px 43px
+    flex-center()
+    flex-direction column
+    justify-content flex-start
+    h1
+      font-size 40px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(35, 35, 35, 1)
+      line-height 20px
+      text-align center
+      margin-top 30px
+    .text
+      width 454px
+      height 106px
+      font-size 28px
+      font-family PingFang-SC-Medium
+      font-weight 500
+      color rgba(159, 159, 159, 1)
+      line-height 40px
+      flex-center()
+      flex-direction column
+      text-align center
+      margin-top 40px
+    .know_btn
+      width 376px
+      height 80px
+      background linear-gradient(86deg, rgba(246, 124, 85, 1) 0%, rgba(255, 97, 93, 1) 100%)
+      border-radius 40px
+      font-size 30px
+      font-family PingFang-SC-Bold
+      font-weight bold
+      color rgba(255, 255, 255, 1)
+      line-height 20px
+      flex-center()
+      margin-top 40px
+    &.exChange
+      .bottom_btn
+        flex-center()
+        justify-content space-between
+        margin-top 40px
+        width 100%
+        .btn
+          width 200px
+          height 80px
+          &.canel
+            bg-img('../../images/personalCenter/canel_icon.png')
+            background-size cover
+          &.confirm
+            bg-img('../../images/personalCenter/confir_icon.png')
+            background-size cover
